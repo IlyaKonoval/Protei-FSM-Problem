@@ -13,11 +13,9 @@ APP_DEBUG   := $(BUILD_DEBUG)/app
 
 .DEFAULT_GOAL := native-release
 
-.PHONY: native-release native-debug \
-        native-run \
+.PHONY: native-release native-debug native-run native-clean \
         native-test1 native-test2 native-test3 native-test4 native-test5 native-test-all \
-        native-clean \
-        build run \
+        build run run-debug \
         test1 test2 test3 test4 test5 test-all \
         clean
 
@@ -33,6 +31,9 @@ native-debug:
 
 native-run: native-release
 	$(APP_RELEASE) $(END_STATES) $(OUT) $(INPUTS)
+
+native-run-debug: native-debug
+	$(APP_DEBUG) $(END_STATES) $(OUT) $(INPUTS)
 
 native-test1: native-release
 	$(APP_RELEASE) testdata/ds1/end_states.txt /tmp/out_ds1.csv testdata/ds1/in.txt
@@ -62,6 +63,9 @@ build:
 
 run:
 	$(COMPOSE) run --rm --build $(SERVICE) $(END_STATES) $(OUT) $(INPUTS)
+
+run-debug:
+	$(COMPOSE) run --rm --build --entrypoint /app/build-debug/app $(SERVICE) $(END_STATES) $(OUT) $(INPUTS)
 
 test1:
 	$(COMPOSE) run --rm --build $(SERVICE) testdata/ds1/end_states.txt /tmp/out_ds1.csv testdata/ds1/in.txt

@@ -14,7 +14,10 @@ WORKDIR /app
 
 COPY . .
 
-RUN cmake -S . -B /app/build -DCMAKE_BUILD_TYPE=Debug \
-    && cmake --build /app/build --parallel
+RUN cmake -S . -B /app/build-release -DCMAKE_BUILD_TYPE=Release \
+    && cmake --build /app/build-release --parallel
 
-ENTRYPOINT ["/app/build/app"]
+RUN cmake -S . -B /app/build-debug -DCMAKE_BUILD_TYPE=Debug \
+    && cmake --build /app/build-debug --parallel
+
+ENTRYPOINT ["/app/build-release/app"]
