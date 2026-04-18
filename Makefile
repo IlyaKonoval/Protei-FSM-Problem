@@ -43,21 +43,21 @@ native-clean:
 # ── Тесты ────────────────────────────────────────────────────────────────────
 
 test1: native-release
-	$(APP_RELEASE) test_ds1/end_states.txt /tmp/out_ds1.csv test_ds1/in.txt
-	$(DIFF) test_ds1/out.csv /tmp/out_ds1.csv
+	$(APP_RELEASE) test_ds1/end_states.txt out/out_ds1.csv test_ds1/in.txt
+	$(DIFF) test_ds1/out.csv out/out_ds1.csv
 
 test2: native-release
-	$(APP_RELEASE) test_ds2/end_states.txt /tmp/out_ds2.csv test_ds2/in.txt
-	$(DIFF) test_ds2/out.csv /tmp/out_ds2.csv
+	$(APP_RELEASE) test_ds2/end_states.txt out/out_ds2.csv test_ds2/in.txt
+	$(DIFF) test_ds2/out.csv out/out_ds2.csv
 
 test3: native-release
-	$(APP_RELEASE) datasets/3/end_states.txt /tmp/out_ds3.csv datasets/3/in.txt
+	$(APP_RELEASE) datasets/3/end_states.txt out/out_ds3.csv datasets/3/in.txt
 
 test4: native-release
-	$(APP_RELEASE) datasets/4/end_states.txt /tmp/out_ds4.csv datasets/4/in.txt
+	$(APP_RELEASE) datasets/4/end_states.txt out/out_ds4.csv datasets/4/in.txt
 
 test5: native-release
-	$(APP_RELEASE) datasets/5/end_states.txt /tmp/out_ds5.csv \
+	$(APP_RELEASE) datasets/5/end_states.txt out/out_ds5.csv \
 		datasets/5/in1.txt datasets/5/in2.txt datasets/5/in3.txt
 
 test-all: test1 test2 test3 test4 test5

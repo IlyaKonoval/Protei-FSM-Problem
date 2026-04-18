@@ -13,7 +13,7 @@ make native-release
 make native-debug
 ./build-debug/app <end_states.txt> <out.csv> <log1> [<log2> ...]
 
-# Тесты (нативные, результат в /tmp/)
+# Тесты (нативные, результат в ./out/)
 make test1                                      # прогон test_ds1, diff с эталоном
 make test-all                                   # все датасеты
 
