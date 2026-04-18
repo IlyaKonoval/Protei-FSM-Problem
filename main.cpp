@@ -9,6 +9,7 @@
 #include <string>
 #include <string_view>
 #include <sys/stat.h>
+#include <unistd.h>
 #include <unordered_map>
 #include <unordered_set>
 #include <vector>
@@ -16,10 +17,6 @@
 namespace {
     using std::string;
     using std::string_view;
-
-    // ---------------------------------------------------------------------------
-    // Data types
-    // ---------------------------------------------------------------------------
 
     struct FsmKey {
         string name;
@@ -55,11 +52,7 @@ namespace {
         string_view event;
     };
 
-    // ---------------------------------------------------------------------------
-    // Parser
-    // ---------------------------------------------------------------------------
-
-    constexpr size_t kTsLen = 23; // "YYYY-MM-DD HH:MM:SS.mmm"
+    constexpr size_t kTsLen = 23;
 
     string_view trim(string_view s) {
         size_t a = 0, b = s.size();
@@ -142,10 +135,6 @@ namespace {
         return true;
     }
 
-    // ---------------------------------------------------------------------------
-    // End-state classifier
-    // ---------------------------------------------------------------------------
-
     struct EndStates {
         std::unordered_map<string, std::unordered_set<string> > by_class;
         std::vector<string> sorted_classes;
@@ -207,10 +196,6 @@ namespace {
         }
     };
 
-    // ---------------------------------------------------------------------------
-    // Output helpers
-    // ---------------------------------------------------------------------------
-
     string format_delta(const string &a, const string &b) {
         auto as_ms = [](const string &ts) -> int64_t {
             int H = std::stoi(ts.substr(11, 2));
@@ -224,11 +209,7 @@ namespace {
             tm.tm_year = y - 1900;
             tm.tm_mon = mo - 1;
             tm.tm_mday = d;
-#if defined(_WIN32)
-            time_t day = _mkgmtime(&tm);
-#else
             time_t day = timegm(&tm);
-#endif
             return static_cast<int64_t>(day) * 1000 +
                    ((H * 3600 + M * 60 + S) * 1000LL) + ms;
         };
@@ -258,17 +239,19 @@ namespace {
         return r + '"';
     }
 
-    // ---------------------------------------------------------------------------
-    // Misc
-    // ---------------------------------------------------------------------------
-
     int64_t file_size(const string &path) {
         struct stat st{};
         if (::stat(path.c_str(), &st) != 0) return -1;
         return static_cast<int64_t>(st.st_size);
     }
 
+    bool stderr_is_tty() {
+        static bool v = isatty(fileno(stderr));
+        return v;
+    }
+
     void print_progress(const string &file, int64_t bytes, int64_t total, int pct) {
+        if (!stderr_is_tty()) return;
         std::fprintf(stderr, "\r[progress] %s: %d%% (%lld/%lld bytes)   ",
                      file.c_str(), pct,
                      static_cast<long long>(bytes),
@@ -281,10 +264,6 @@ namespace {
                 << " <end_states.txt> <out.csv> <log1> [<log2> ...]\n";
     }
 } // namespace
-
-// ---------------------------------------------------------------------------
-// main
-// ---------------------------------------------------------------------------
 
 int main(int argc, char *argv[]) {
     if (argc < 4) {
@@ -360,7 +339,9 @@ int main(int argc, char *argv[]) {
             }
         }
 
-        std::fprintf(stderr, "\r[progress] %s: done (%lld bytes)          \n",
+        std::fprintf(stderr, stderr_is_tty()
+                         ? "\r[progress] %s: done (%lld bytes)          \n"
+                         :   "[progress] %s: done (%lld bytes)\n",
                      in_path.c_str(), static_cast<long long>(bytes));
     }
 
