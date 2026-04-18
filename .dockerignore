@@ -1,0 +1,7 @@
+.git
+.idea
+.claude
+cmake-build-*
+build*
+*.pdf
+README.md
