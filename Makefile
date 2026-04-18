@@ -1,6 +1,7 @@
-END_STATES ?= test_ds1/end_states.txt
-INPUTS     ?= test_ds1/in.txt
-OUT        ?= /tmp/out.csv
+END_STATES  ?= test_ds1/end_states.txt
+INPUTS      ?= test_ds1/in.txt
+OUT         ?= out/out.csv
+DOCKER_OUT  ?= /out/out.csv
 
 BUILD_RELEASE ?= build-release
 BUILD_DEBUG   ?= build-debug
@@ -68,10 +69,10 @@ build:
 	$(COMPOSE) build $(SERVICE)
 
 run:
-	$(COMPOSE) run --rm --build $(SERVICE) $(END_STATES) $(OUT) $(INPUTS)
+	time $(COMPOSE) run --rm --build $(SERVICE) $(END_STATES) $(DOCKER_OUT) $(INPUTS)
 
 run-debug:
-	$(COMPOSE) run --rm --build --entrypoint /app/build-debug/app $(SERVICE) $(END_STATES) $(OUT) $(INPUTS)
+	time $(COMPOSE) run --rm --build --entrypoint /app/build-debug/app $(SERVICE) $(END_STATES) $(DOCKER_OUT) $(INPUTS)
 
 docker-test1:
 	$(COMPOSE) run --rm --build $(SERVICE) test_ds1/end_states.txt /out/out_ds1.csv test_ds1/in.txt
