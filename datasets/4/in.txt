@@ -1,0 +1,843 @@
+2026-04-10 11:27:44.286 Congestion.cpp(768) FSM: Congestion id: 0; > St: 0 ACTIVE Pr: 47379:15 CONG_SUBSCRIBE_REQ ()
+2026-04-10 11:27:44.286 PrimFSM.cpp(37) FSM: Cosmos id: 0; > St: 0 ACTIVE Pr: 47365:6 PINGER_SUBSCRIBE_TO_UPDATE_CONFIG_IND ()
+2026-04-10 11:27:44.286 PrimFSM.cpp(72) FSM: Cosmos id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:44.286 PrimFSM.cpp(37) FSM: StatManager id: 0; > St: 0 ACTIVE Pr: 47368:2 SET_VALUE_IND ()
+2026-04-10 11:27:44.286 PrimFSM.cpp(72) FSM: StatManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:44.286 PrimFSM.cpp(37) FSM: StatManager id: 0; > St: 0 ACTIVE Pr: 47368:2 SET_VALUE_IND ()
+2026-04-10 11:27:44.286 PrimFSM.cpp(72) FSM: StatManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:44.286 PrimFSM.cpp(37) FSM: Config id: 0; > St: 0 FIRST_INIT Pr: 47362:1 CONFIG_SUBSCRIBE_IND ()
+2026-04-10 11:27:44.286 PrimFSM.cpp(72) FSM: Config id: 0; < St: 0 FIRST_INIT
+2026-04-10 11:27:44.286 PrimFSM.cpp(37) FSM: Config id: 0; > St: 0 FIRST_INIT Pr: 47362:1 CONFIG_SUBSCRIBE_IND ()
+2026-04-10 11:27:44.286 PrimFSM.cpp(72) FSM: Config id: 0; < St: 0 FIRST_INIT
+2026-04-10 11:27:44.286 PrimFSM.cpp(37) FSM: Config id: 0; > St: 0 FIRST_INIT Pr: 47362:1 CONFIG_SUBSCRIBE_IND ()
+2026-04-10 11:27:44.286 PrimFSM.cpp(72) FSM: Config id: 0; < St: 0 FIRST_INIT
+2026-04-10 11:27:44.286 PrimFSM.cpp(37) FSM: Config id: 0; > St: 0 FIRST_INIT Pr: 47362:1 CONFIG_SUBSCRIBE_IND ()
+2026-04-10 11:27:44.286 PrimFSM.cpp(72) FSM: Config id: 0; < St: 0 FIRST_INIT
+2026-04-10 11:27:44.286 PrimFSM.cpp(37) FSM: Config id: 0; > St: 0 FIRST_INIT Pr: 47362:1 CONFIG_SUBSCRIBE_IND ()
+2026-04-10 11:27:44.286 PrimFSM.cpp(72) FSM: Config id: 0; < St: 0 FIRST_INIT
+2026-04-10 11:27:44.286 PrimFSM.cpp(37) FSM: StatManager id: 0; > St: 0 ACTIVE Pr: 47368:2 SET_VALUE_IND ()
+2026-04-10 11:27:44.286 PrimFSM.cpp(72) FSM: StatManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:44.286 PrimFSM.cpp(37) FSM: StatManager id: 0; > St: 0 ACTIVE Pr: 47368:2 SET_VALUE_IND ()
+2026-04-10 11:27:44.286 PrimFSM.cpp(72) FSM: StatManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:44.286 PrimFSM.cpp(37) FSM: StatManager id: 0; > St: 0 ACTIVE Pr: 47368:2 SET_VALUE_IND ()
+2026-04-10 11:27:44.286 PrimFSM.cpp(72) FSM: StatManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:44.286 PrimFSM.cpp(37) FSM: StatManager id: 0; > St: 0 ACTIVE Pr: 47368:0 REGISTER_VALUE_IND ()
+2026-04-10 11:27:44.287 PrimFSM.cpp(72) FSM: StatManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:44.288 PrimFSM.cpp(37) FSM: StatManager id: 0; > St: 0 ACTIVE Pr: 47368:0 REGISTER_VALUE_IND ()
+2026-04-10 11:27:44.288 PrimFSM.cpp(72) FSM: StatManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:44.288 PrimFSM.cpp(37) FSM: StatManager id: 0; > St: 0 ACTIVE Pr: 47368:2 SET_VALUE_IND ()
+2026-04-10 11:27:44.288 PrimFSM.cpp(72) FSM: StatManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:44.288 PrimFSM.cpp(37) FSM: StatManager id: 0; > St: 0 ACTIVE Pr: 47368:2 SET_VALUE_IND ()
+2026-04-10 11:27:44.288 PrimFSM.cpp(72) FSM: StatManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:44.288 PrimFSM.cpp(37) FSM: Config id: 0; > St: 0 FIRST_INIT Pr: 47362:1 CONFIG_SUBSCRIBE_IND ()
+2026-04-10 11:27:44.288 PrimFSM.cpp(72) FSM: Config id: 0; < St: 0 FIRST_INIT
+2026-04-10 11:27:44.288 PrimFSM.cpp(37) FSM: StatManager id: 0; > St: 0 ACTIVE Pr: 47368:0 REGISTER_VALUE_IND ()
+2026-04-10 11:27:44.288 PrimFSM.cpp(72) FSM: StatManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:44.288 PrimFSM.cpp(37) FSM: StatManager id: 0; > St: 0 ACTIVE Pr: 47368:11 SET_TRAP_IND ()
+2026-04-10 11:27:44.288 PrimFSM.cpp(72) FSM: StatManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:44.288 PrimFSM.cpp(37) FSM: Config id: 0; > St: 0 FIRST_INIT Pr: 47362:1 CONFIG_SUBSCRIBE_IND ()
+2026-04-10 11:27:44.288 PrimFSM.cpp(72) FSM: Config id: 0; < St: 0 FIRST_INIT
+2026-04-10 11:27:44.288 PrimFSM.cpp(37) FSM: Config id: 0; > St: 0 FIRST_INIT Pr: 47362:1 CONFIG_SUBSCRIBE_IND ()
+2026-04-10 11:27:44.288 PrimFSM.cpp(72) FSM: Config id: 0; < St: 0 FIRST_INIT
+2026-04-10 11:27:44.288 PrimFSM.cpp(37) FSM: ApManager id: 0; > St: 0 ACTIVE Pr: 47368:11 SET_TRAP_IND ()
+2026-04-10 11:27:44.288 PrimFSM.cpp(72) FSM: ApManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:44.289 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 0 IDLE Pr: 47379:16 CONG_SUBSCRIBE_CONF ()
+2026-04-10 11:27:44.289 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 0 IDLE
+2026-04-10 11:27:44.291 PrimFSM.cpp(37) FSM: Config id: 0; > St: 0 FIRST_INIT Pr: 47362:2 CONFIG_LOAD_REQ ()
+2026-04-10 11:27:44.294 PrimFSM.cpp(72) FSM: Config id: 0; < St: 2 ACTIVE
+2026-04-10 11:27:44.294 PrimFSM.cpp(37) FSM: StatManager id: 0; > St: 0 ACTIVE Pr: 47368:2 SET_VALUE_IND ()
+2026-04-10 11:27:44.294 PrimFSM.cpp(72) FSM: StatManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:44.295 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 0 IDLE Pr: 47362:5 CONFIG_APPLY_REQ ()
+2026-04-10 11:27:44.295 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 2 APPLYING_CONFIG
+2026-04-10 11:27:44.297 PrimFSM.cpp(37) FSM: AlgProxy id: 0; > St: 0 ACTIVE Pr: 47374:0 ALG_PROXY_APPLY_CONFIG_REQ ()
+2026-04-10 11:27:44.298 Congestion.cpp(768) FSM: Congestion id: 0; > St: 0 ACTIVE Pr: 47379:12 CONG_LOAD_CONFIG_REQ ()
+2026-04-10 11:27:44.300 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 2 APPLYING_CONFIG Pr: 47379:13 CONG_LOAD_CONFIG_CONF ()
+2026-04-10 11:27:44.300 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 2 APPLYING_CONFIG
+2026-04-10 11:27:44.331 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 2 APPLYING_CONFIG Pr: 34:1 CM_CREATE_CONF ()
+2026-04-10 11:27:44.331 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 2 APPLYING_CONFIG
+2026-04-10 11:27:44.403 PrimFSM.cpp(72) FSM: AlgProxy id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:44.403 PrimFSM.cpp(37) FSM: GlobalCallDumper id: 0; > St: 0 IDLE Pr: 47370:0 CALL_DUMPER_LOAD_CONFIG_REQ ()
+2026-04-10 11:27:44.403 PrimFSM.cpp(72) FSM: GlobalCallDumper id: 0; < St: 0 IDLE
+2026-04-10 11:27:44.403 PrimFSM.cpp(37) FSM: H323Manager id: 0; > St: 0 ACTIVE Pr: 47386:0 H323_LOAD_CONFIG_REQ ()
+2026-04-10 11:27:44.406 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 2 APPLYING_CONFIG Pr: 47374:1 ALG_PROXY_APPLY_CONFIG_CONF ()
+2026-04-10 11:27:44.406 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 2 APPLYING_CONFIG
+2026-04-10 11:27:44.406 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 2 APPLYING_CONFIG Pr: 47370:1 CALL_DUMPER_LOAD_CONFIG_CONF ()
+2026-04-10 11:27:44.406 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 2 APPLYING_CONFIG
+2026-04-10 11:27:44.507 PrimFSM.cpp(72) FSM: H323Manager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:44.507 PrimFSM.cpp(37) FSM: StatManager id: 0; > St: 0 ACTIVE Pr: 47368:2 SET_VALUE_IND ()
+2026-04-10 11:27:44.508 PrimFSM.cpp(72) FSM: StatManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:44.508 PrimFSM.cpp(37) FSM: CongestionMalformedMessagesMatcher id: 0; > St: 0 IDLE Pr: 47391:0 CMMM_INIT_IND ()
+2026-04-10 11:27:44.508 PrimFSM.cpp(72) FSM: CongestionMalformedMessagesMatcher id: 0; < St: 1 WAIT_SET_CONFIG
+2026-04-10 11:27:44.508 PrimFSM.cpp(37) FSM: StatManager id: 0; > St: 0 ACTIVE Pr: 47368:11 SET_TRAP_IND ()
+2026-04-10 11:27:44.508 PrimFSM.cpp(72) FSM: StatManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:44.508 PrimFSM.cpp(37) FSM: StatManager id: 0; > St: 0 ACTIVE Pr: 47368:2 SET_VALUE_IND ()
+2026-04-10 11:27:44.508 PrimFSM.cpp(72) FSM: StatManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:44.510 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 2 APPLYING_CONFIG Pr: 47386:1 H323_LOAD_CONFIG_CONF ()
+2026-04-10 11:27:44.510 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 0 IDLE
+2026-04-10 11:27:44.511 PrimFSM.cpp(37) FSM: H323MNG id: 0; > St: 0 LINKING Pr: 34:24 CM_LINK_CONF ()
+2026-04-10 11:27:44.511 PrimFSM.cpp(72) FSM: H323MNG id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:44.511 PrimFSM.cpp(37) FSM: Config id: 0; > St: 2 ACTIVE Pr: 47362:6 CONFIG_APPLY_CONF ()
+2026-04-10 11:27:44.512 PrimFSM.cpp(72) FSM: Config id: 0; < St: 1 IDLE
+2026-04-10 11:27:44.512 PrimFSM.cpp(37) FSM: HttpManager id: 0; > St: 0 ACTIVE Pr: 47362:0 CONFIG_SET_IND ()
+2026-04-10 11:27:44.512 PrimFSM.cpp(72) FSM: HttpManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:44.512 PrimFSM.cpp(37) FSM: CongestionMalformedMessagesMatcher id: 0; > St: 1 WAIT_SET_CONFIG Pr: 47362:0 CONFIG_SET_IND ()
+2026-04-10 11:27:44.512 PrimFSM.cpp(72) FSM: CongestionMalformedMessagesMatcher id: 0; < St: 2 ACTIVE
+2026-04-10 11:27:44.512 PrimFSM.cpp(37) FSM: WebSocketManager id: 0; > St: 0 ACTIVE Pr: 47362:0 CONFIG_SET_IND ()
+2026-04-10 11:27:44.512 PrimFSM.cpp(72) FSM: WebSocketManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:44.512 PrimFSM.cpp(37) FSM: DatabaseManager id: 0; > St: 0 WAIT_CONFIG Pr: 47362:0 CONFIG_SET_IND ()
+2026-04-10 11:27:44.512 PrimFSM.cpp(72) FSM: DatabaseManager id: 0; < St: 1 WAIT_DB_CONNECTOR
+2026-04-10 11:27:44.512 PrimFSM.cpp(37) FSM: DatabaseManager id: 0; > St: 1 WAIT_DB_CONNECTOR Pr: 47366:8 DATABASE_CONNECTION_REJ ()
+2026-04-10 11:27:44.512 PrimFSM.cpp(72) FSM: DatabaseManager id: 0; < St: 3 ACTIVE
+2026-04-10 11:27:44.513 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 0 IDLE Pr: 47362:3 CONFIG_LOAD_CONF ()
+2026-04-10 11:27:44.513 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:44.513 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 47362:0 CONFIG_SET_IND ()
+2026-04-10 11:27:44.514 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:44.514 PrimFSM.cpp(37) FSM: Cosmos id: 0; > St: 0 ACTIVE Pr: 47362:0 CONFIG_SET_IND ()
+2026-04-10 11:27:44.514 PrimFSM.cpp(72) FSM: Cosmos id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:44.514 PrimFSM.cpp(37) FSM: Cosmos id: 0; > St: 0 ACTIVE Pr: 47363:26 CMD_GET_STAT_REQ (: info.id: 1)
+2026-04-10 11:27:44.514 PrimFSM.cpp(72) FSM: Cosmos id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:44.515 PrimFSM.cpp(37) FSM: StatManager id: 0; > St: 0 ACTIVE Pr: 47368:11 SET_TRAP_IND ()
+2026-04-10 11:27:44.515 PrimFSM.cpp(72) FSM: StatManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:44.515 PrimFSM.cpp(37) FSM: SurrogateRegisterManager.0 id: 0; > St: 0 ACTIVE Pr: 47381:0 SURROGATE_REGISTER_LOAD_CONFIG_IND ()
+2026-04-10 11:27:44.515 PrimFSM.cpp(72) FSM: SurrogateRegisterManager.0 id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:44.515 PrimFSM.cpp(37) FSM: ApManager id: 0; > St: 0 ACTIVE Pr: 47368:11 SET_TRAP_IND ()
+2026-04-10 11:27:44.515 PrimFSM.cpp(72) FSM: ApManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:44.517 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 47363:27 CMD_GET_STAT_RESP (: info.id: 1)
+2026-04-10 11:27:44.517 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:44.518 PrimFSM.cpp(37) FSM: StatManager id: 0; > St: 0 ACTIVE Pr: 47368:2 SET_VALUE_IND ()
+2026-04-10 11:27:44.557 PrimFSM.cpp(72) FSM: StatManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.172 PrimFSM.cpp(37) FSM: HttpManager id: 0; > St: 0 ACTIVE Pr: 3361:0 HTTP_GET_IND (CA = [Sg.HTTP.SDir.1.SCL.0,0] | RemoteAddress = 127.0.0.1:33656 | LocalAddress = 127.0.0.1:8500 | TempFilePresent = 0
+GET //config/all HTTP/1.1
+Host: 127.0.0.1:8500
+User-Agent: python-requests/2.28.2
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive)
+2026-04-10 11:27:45.172 PrimFSM.cpp(72) FSM: HttpManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.178 PrimFSM.cpp(37) FSM: HttpManager id: 0; > St: 0 ACTIVE Pr: 3361:0 HTTP_GET_IND (CA = [Sg.HTTP.SDir.1.SCL.0,1] | RemoteAddress = 127.0.0.1:33656 | LocalAddress = 127.0.0.1:8500 | TempFilePresent = 0
+GET //config/all HTTP/1.1
+Host: 127.0.0.1:8500
+User-Agent: python-requests/2.28.2
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+[REDACTED]
+2026-04-10 11:27:45.179 PrimFSM.cpp(72) FSM: HttpManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.186 PrimFSM.cpp(37) FSM: HttpManager id: 0; > St: 0 ACTIVE Pr: 3361:1 HTTP_POST_IND (CA = [Sg.HTTP.SDir.1.SCL.0,2] | RemoteAddress = 127.0.0.1:33656 | LocalAddress = 127.0.0.1:8500 | TempFilePresent = 0
+POST //config/main/load HTTP/1.1
+Host: 127.0.0.1:8500
+User-Agent: python-requests/2.28.2
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+[REDACTED]
+Content-Type: application/json    //mime_part_header
+
+{"alg": {"mcu": [{"group": "default", "description": "", "hostport": {"host": "127.0.0.1", "port": 2040}, "subnetworks": [{"network": "USER-MCU-NETWORK", "interface": "127.0.0.1", "audio-channels": 20, "video-channels": 20}, {"network": "WS-MCU-NETWORK", "interface": "127.0.0.1", "audio-channels": 20, "video-channels": 20}, {"network": "SERVICE-MCU-NETWORK", "interface": "127.0.0.1", "audio-channels": 20, "video-channels": 20}, {"network": "OPERATOR-MCU-NETWORK", "interface": "127.0.0.1", "audio-channels": 20, "video-channels": 20}]}]}, "callDumper": {}, "congestion": {"config": {"globalProfile": {"coRps": 100, "cps": 100, "origCps": 100, "regPs": 100, "responsePs": 100, "rps": 100, "simultaneousCall": 1000, "simultaneousOrigCall": 1000, "simultaneousReg": 1000, "simultaneousSub": 10000000, "simultaneousTermCall": 1000, "termCps": 100}, "limits": {"default": {"coRps": 1000, "cps": 100, "regPs": 100, "responsePs": 1000, "rps": 1000, "simultaneousCall": 1000, "simultaneousOrigCall": 1000, "simultaneousReg": 1000, "simultaneousSub": 1000000, "simultaneousTermCall": 1000, "termCps": 100}}, "profiles": {"additional": {}, "default": {"aor": {"authBorderForPer": 100, "authPer": 0.3, "avCps": 100, "avRps": 200, "cps": 500, "failAuthAbs": 100, "malformedAbs": 100, "malformedBorderForPer": 100, "malformedPer": 0.3, "regPs": 5000, "responsePs": 1000, "rps": 1000, "simultaneousCall": 100, "simultaneousOrigCall": 100, "simultaneousReg": 100, "simultaneousSub": 1000000, "simultaneousTermCall": 100, "termCps": 500}, "gate": {"authBorderForPer": 100, "authPer": 0.5, "avCps": 500, "avRps": 1000, "cps": 1000, "failAuthAbs": 250, "malformedAbs": 250, "malformedBorderForPer": 100, "malformedPer": 0.5, "regPs": 10000, "responsePs": 1000, "rps": 100, "simultaneousCall": 3500, "simultaneousOrigCall": 3500, "simultaneousReg": 3500, "simultaneousSub": 35000000, "simultaneousTermCall": 3500, "termCps": 1000}, "ip": {"authBorderForPer": 100, "authPer": 0.5, "avCps": 500, "avRps": 1000, "cps": 1000, "failAuthAbs": 250, "malformedAbs": 250, "malformedBorderForPer": 100, "malformedPer": 0.5, "regPs": 10000, "responsePs": 1000, "rps": 100, "simultaneousCall": 3500, "simultaneousOrigCall": 3500, "simultaneousReg": 3500, "simultaneousSub": 3500000, "simultaneousTermCall": 3500, "termCps": 1000}}}}, "matchers": {"aor": [], "network": []}}, "cutter": {}, "h323": {"externalMediaNetwork": "empty", "internalMediaNetwork": "empty", "service": {"host": "127.0.0.1", "port": 1720}}, "http": {"users": [{"ha1": "3b9775665e13ee265b2a7ec758c9a8cf", "level": "admin", "name": "support"}]}, "restore": {}, "sbc": {"codecs": {}, "expire": {"common": {"max": 3600, "min": 5}}, "mediaProfiles": {"empty": {"codecs": {}, "forcedProxy": false, "ptMap": {}}}, "routing": {"operator": [], "user": []}, "services": {}, "storage": {}, "userProfiles": {}, "videoCodecs": {}}, "sip": {"TLS": {"additional": []}, "timer": {"T0": 3200, "T1": 200, "T2": 1000, "TB": 4000, "TF": 3200, "TH": 4000, "TJ": 12800, "TP": 600000, "noResponseTimeout": 16000}}})
+2026-04-10 11:27:45.186 PrimFSM.cpp(72) FSM: HttpManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.186 PrimFSM.cpp(37) FSM: Config id: 0; > St: 1 IDLE Pr: 47362:2 CONFIG_LOAD_REQ (2)
+2026-04-10 11:27:45.191 PrimFSM.cpp(72) FSM: Config id: 0; < St: 2 ACTIVE
+2026-04-10 11:27:45.191 PrimFSM.cpp(37) FSM: StatManager id: 0; > St: 0 ACTIVE Pr: 47368:2 SET_VALUE_IND ()
+2026-04-10 11:27:45.191 PrimFSM.cpp(72) FSM: StatManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.192 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 47362:5 CONFIG_APPLY_REQ ()
+2026-04-10 11:27:45.192 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 2 APPLYING_CONFIG
+2026-04-10 11:27:45.195 PrimFSM.cpp(37) FSM: AlgProxy id: 0; > St: 0 ACTIVE Pr: 47374:0 ALG_PROXY_APPLY_CONFIG_REQ ()
+2026-04-10 11:27:45.195 PrimFSM.cpp(72) FSM: AlgProxy id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.195 PrimFSM.cpp(37) FSM: MCU.default id: 0; > St: 2 CONNECTING Pr: 184:5 SI_CONNECT_PROGRESS_IND ((0, 4); addr=127.0.0.1:2040)
+2026-04-10 11:27:45.195 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 2 APPLYING_CONFIG Pr: 47374:1 ALG_PROXY_APPLY_CONFIG_CONF ()
+2026-04-10 11:27:45.196 PrimFSM.cpp(72) FSM: MCU.default id: 0; < St: 2 CONNECTING
+2026-04-10 11:27:45.196 PrimFSM.cpp(37) FSM: MCU.default id: 0; > St: 2 CONNECTING Pr: 184:12 SI_ESTABLISH_IND ((0, 4): local(127.0.0.1:52556), remote(127.0.0.1:2040), AddInfo())
+2026-04-10 11:27:45.196 PrimFSM.cpp(72) FSM: MCU.default id: 0; < St: 3 WAIT_INFO
+2026-04-10 11:27:45.196 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:45.196 PrimFSM.cpp(37) FSM: StatManager id: 0; > St: 0 ACTIVE Pr: 47368:11 SET_TRAP_IND ()
+2026-04-10 11:27:45.196 PrimFSM.cpp(72) FSM: StatManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.196 PrimFSM.cpp(37) FSM: Config id: 0; > St: 2 ACTIVE Pr: 47362:6 CONFIG_APPLY_CONF ()
+2026-04-10 11:27:45.197 PrimFSM.cpp(72) FSM: Config id: 0; < St: 1 IDLE
+2026-04-10 11:27:45.197 PrimFSM.cpp(37) FSM: HttpManager id: 0; > St: 0 ACTIVE Pr: 47362:3 CONFIG_LOAD_CONF (2)
+2026-04-10 11:27:45.197 PrimFSM.cpp(72) FSM: HttpManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.197 PrimFSM.cpp(37) FSM: CongestionMalformedMessagesMatcher id: 0; > St: 2 ACTIVE Pr: 47362:0 CONFIG_SET_IND ()
+2026-04-10 11:27:45.197 PrimFSM.cpp(72) FSM: CongestionMalformedMessagesMatcher id: 0; < St: 2 ACTIVE
+2026-04-10 11:27:45.197 PrimFSM.cpp(37) FSM: HttpManager id: 0; > St: 0 ACTIVE Pr: 47362:0 CONFIG_SET_IND ()
+2026-04-10 11:27:45.197 PrimFSM.cpp(72) FSM: HttpManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.197 PrimFSM.cpp(37) FSM: WebSocketManager id: 0; > St: 0 ACTIVE Pr: 47362:0 CONFIG_SET_IND ()
+2026-04-10 11:27:45.197 PrimFSM.cpp(72) FSM: WebSocketManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.198 PrimFSM.cpp(37) FSM: Cosmos id: 0; > St: 0 ACTIVE Pr: 47362:0 CONFIG_SET_IND ()
+2026-04-10 11:27:45.198 PrimFSM.cpp(72) FSM: Cosmos id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.199 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 47362:0 CONFIG_SET_IND ()
+2026-04-10 11:27:45.199 PrimFSM.cpp(37) FSM: DatabaseManager id: 0; > St: 3 ACTIVE Pr: 47362:0 CONFIG_SET_IND ()
+2026-04-10 11:27:45.199 PrimFSM.cpp(72) FSM: DatabaseManager id: 0; < St: 3 ACTIVE
+2026-04-10 11:27:45.200 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:45.201 PrimFSM.cpp(37) FSM: Cosmos id: 0; > St: 0 ACTIVE Pr: 47363:26 CMD_GET_STAT_REQ (: info.id: 3)
+2026-04-10 11:27:45.201 PrimFSM.cpp(72) FSM: Cosmos id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.203 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 47363:27 CMD_GET_STAT_RESP (: info.id: 3)
+2026-04-10 11:27:45.204 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:45.204 PrimFSM.cpp(37) FSM: StatManager id: 0; > St: 0 ACTIVE Pr: 47368:2 SET_VALUE_IND ()
+2026-04-10 11:27:45.244 PrimFSM.cpp(72) FSM: StatManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.244 PrimFSM.cpp(37) FSM: HttpManager id: 0; > St: 0 ACTIVE Pr: 3361:0 HTTP_GET_IND (CA = [Sg.HTTP.SDir.1.SCL.0,3] | RemoteAddress = 127.0.0.1:33656 | LocalAddress = 127.0.0.1:8500 | TempFilePresent = 0
+GET //config/all HTTP/1.1
+Host: 127.0.0.1:8500
+User-Agent: python-requests/2.28.2
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+[REDACTED]
+2026-04-10 11:27:45.244 PrimFSM.cpp(72) FSM: HttpManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.244 PrimFSM.cpp(37) FSM: MCU.default id: 0; > St: 3 WAIT_INFO Pr: 184:25 SI_COMMAND_IND ((0, 4): prim=EXT_INFO, additional=version = 127.0.0.1;
+MaxUsers = 250;
+MaxVideoUsers = 250;
+ConnectionID = 1;
+)
+2026-04-10 11:27:45.244 PrimFSM.cpp(72) FSM: MCU.default id: 0; < St: 4 ACTIVE
+2026-04-10 11:27:45.245 PrimFSM.cpp(37) FSM: AlgProxy id: 0; > St: 0 ACTIVE Pr: 46864:41 ALG_MCU_NON_EXCEED_MAX_USERS ()
+2026-04-10 11:27:45.245 PrimFSM.cpp(72) FSM: AlgProxy id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.245 PrimFSM.cpp(37) FSM: AlgProxy id: 0; > St: 0 ACTIVE Pr: 46864:31 ALG_MCU_CONNECT ()
+2026-04-10 11:27:45.245 PrimFSM.cpp(72) FSM: AlgProxy id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.245 PrimFSM.cpp(37) FSM: StatManager id: 0; > St: 0 ACTIVE Pr: 47368:11 SET_TRAP_IND ()
+2026-04-10 11:27:45.245 PrimFSM.cpp(72) FSM: StatManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.245 PrimFSM.cpp(37) FSM: ApManager id: 0; > St: 0 ACTIVE Pr: 47368:11 SET_TRAP_IND ()
+2026-04-10 11:27:45.245 PrimFSM.cpp(72) FSM: ApManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.247 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 47385:2 ALG_PROXY_STAT_MCU_NON_EXCEED_MAX_USERS_IND ()
+2026-04-10 11:27:45.247 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:45.247 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 47385:0 ALG_PROXY_STAT_MCU_CONNECT_IND ()
+2026-04-10 11:27:45.247 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:45.248 PrimFSM.cpp(37) FSM: StatManager id: 0; > St: 0 ACTIVE Pr: 47368:11 SET_TRAP_IND ()
+2026-04-10 11:27:45.248 PrimFSM.cpp(72) FSM: StatManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.249 PrimFSM.cpp(37) FSM: StatManager id: 0; > St: 0 ACTIVE Pr: 47368:11 SET_TRAP_IND ()
+2026-04-10 11:27:45.249 PrimFSM.cpp(72) FSM: StatManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.249 PrimFSM.cpp(37) FSM: HttpManager id: 0; > St: 0 ACTIVE Pr: 3361:1 HTTP_POST_IND (CA = [Sg.HTTP.SDir.1.SCL.0,4] | RemoteAddress = 127.0.0.1:33656 | LocalAddress = 127.0.0.1:8500 | TempFilePresent = 0
+POST //config/main/load HTTP/1.1
+Host: 127.0.0.1:8500
+User-Agent: python-requests/2.28.2
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+[REDACTED]
+Content-Type: application/json    //mime_part_header
+
+{"alg": {"mcu": [{"description": "", "group": "default", "hostport": {"host": "127.0.0.1", "port": 2040}, "subnetworks": [{"audio-channels": 20, "interface": "127.0.0.1", "network": "USER-MCU-NETWORK", "video-channels": 20}, {"audio-channels": 20, "interface": "127.0.0.1", "network": "WS-MCU-NETWORK", "video-channels": 20}, {"audio-channels": 20, "interface": "127.0.0.1", "network": "SERVICE-MCU-NETWORK", "video-channels": 20}, {"audio-channels": 20, "interface": "127.0.0.1", "network": "OPERATOR-MCU-NETWORK", "video-channels": 20}]}]}, "callDumper": {}, "congestion": {"config": {"globalProfile": {"coRps": 100, "cps": 100, "origCps": 100, "regPs": 100, "responsePs": 100, "rps": 100, "simultaneousCall": 1000, "simultaneousOrigCall": 1000, "simultaneousReg": 1000, "simultaneousSub": 10000000, "simultaneousTermCall": 1000, "termCps": 100}, "limits": {"default": {"coRps": 1000, "cps": 100, "regPs": 100, "responsePs": 1000, "rps": 1000, "simultaneousCall": 1000, "simultaneousOrigCall": 1000, "simultaneousReg": 1000, "simultaneousSub": 1000000, "simultaneousTermCall": 1000, "termCps": 100}}, "profiles": {"additional": {}, "default": {"aor": {"authBorderForPer": 100, "authPer": 0.3, "avCps": 100, "avRps": 200, "cps": 500, "failAuthAbs": 100, "malformedAbs": 100, "malformedBorderForPer": 100, "malformedPer": 0.3, "regPs": 5000, "responsePs": 1000, "rps": 1000, "simultaneousCall": 100, "simultaneousOrigCall": 100, "simultaneousReg": 100, "simultaneousSub": 1000000, "simultaneousTermCall": 100, "termCps": 500}, "gate": {"authBorderForPer": 100, "authPer": 0.5, "avCps": 500, "avRps": 1000, "cps": 1000, "failAuthAbs": 250, "malformedAbs": 250, "malformedBorderForPer": 100, "malformedPer": 0.5, "regPs": 10000, "responsePs": 1000, "rps": 100, "simultaneousCall": 3500, "simultaneousOrigCall": 3500, "simultaneousReg": 3500, "simultaneousSub": 35000000, "simultaneousTermCall": 3500, "termCps": 1000}, "ip": {"authBorderForPer": 100, "authPer": 0.5, "avCps": 500, "avRps": 1000, "cps": 1000, "failAuthAbs": 250, "malformedAbs": 250, "malformedBorderForPer": 100, "malformedPer": 0.5, "regPs": 10000, "responsePs": 1000, "rps": 100, "simultaneousCall": 3500, "simultaneousOrigCall": 3500, "simultaneousReg": 3500, "simultaneousSub": 3500000, "simultaneousTermCall": 3500, "termCps": 1000}}}}, "matchers": {"aor": [], "network": []}}, "cutter": {}, "h323": {"externalMediaNetwork": "empty", "internalMediaNetwork": "empty", "service": {"host": "127.0.0.1", "port": 1720}}, "http": {"users": [{"ha1": "3b9775665e13ee265b2a7ec758c9a8cf", "level": "admin", "name": "support"}]}, "restore": {}, "sbc": {"codecs": {}, "expire": {"common": {"max": 3600, "min": 5}}, "mediaProfiles": {"empty": {"codecs": {}, "forcedProxy": false, "ptMap": {}}, "media-profile-server": {"videoCodecs": {}, "codecs": {}, "forcedProxy": true, "allowMediaInconsistency": false, "ptMap": {}}}, "routing": {"operator": [], "user": []}, "services": {}, "storage": {}, "userProfiles": {}, "videoCodecs": {}}, "sip": {"TLS": {"additional": []}, "timer": {"T0": 3200, "T1": 200, "T2": 1000, "TB": 4000, "TF": 3200, "TH": 4000, "TJ": 12800, "TP": 600000, "noResponseTimeout": 16000}}})
+2026-04-10 11:27:45.249 PrimFSM.cpp(72) FSM: HttpManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.249 PrimFSM.cpp(37) FSM: ApManager id: 0; > St: 0 ACTIVE Pr: 47368:11 SET_TRAP_IND ()
+2026-04-10 11:27:45.249 PrimFSM.cpp(72) FSM: ApManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.249 PrimFSM.cpp(37) FSM: ApManager id: 0; > St: 0 ACTIVE Pr: 47368:11 SET_TRAP_IND ()
+2026-04-10 11:27:45.249 PrimFSM.cpp(72) FSM: ApManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.249 PrimFSM.cpp(37) FSM: Config id: 0; > St: 1 IDLE Pr: 47362:2 CONFIG_LOAD_REQ (4)
+2026-04-10 11:27:45.253 PrimFSM.cpp(72) FSM: Config id: 0; < St: 2 ACTIVE
+2026-04-10 11:27:45.253 PrimFSM.cpp(37) FSM: StatManager id: 0; > St: 0 ACTIVE Pr: 47368:2 SET_VALUE_IND ()
+2026-04-10 11:27:45.253 PrimFSM.cpp(72) FSM: StatManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.256 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 47362:5 CONFIG_APPLY_REQ ()
+2026-04-10 11:27:45.256 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:45.257 PrimFSM.cpp(37) FSM: Config id: 0; > St: 2 ACTIVE Pr: 47362:6 CONFIG_APPLY_CONF ()
+2026-04-10 11:27:45.257 PrimFSM.cpp(37) FSM: DatabaseManager id: 0; > St: 3 ACTIVE Pr: 47362:0 CONFIG_SET_IND ()
+2026-04-10 11:27:45.257 PrimFSM.cpp(72) FSM: Config id: 0; < St: 1 IDLE
+2026-04-10 11:27:45.257 PrimFSM.cpp(72) FSM: DatabaseManager id: 0; < St: 3 ACTIVE
+2026-04-10 11:27:45.257 PrimFSM.cpp(37) FSM: HttpManager id: 0; > St: 0 ACTIVE Pr: 47362:3 CONFIG_LOAD_CONF (4)
+2026-04-10 11:27:45.257 PrimFSM.cpp(72) FSM: HttpManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.257 PrimFSM.cpp(37) FSM: CongestionMalformedMessagesMatcher id: 0; > St: 2 ACTIVE Pr: 47362:0 CONFIG_SET_IND ()
+2026-04-10 11:27:45.258 PrimFSM.cpp(72) FSM: CongestionMalformedMessagesMatcher id: 0; < St: 2 ACTIVE
+2026-04-10 11:27:45.258 PrimFSM.cpp(37) FSM: HttpManager id: 0; > St: 0 ACTIVE Pr: 47362:0 CONFIG_SET_IND ()
+2026-04-10 11:27:45.258 PrimFSM.cpp(72) FSM: HttpManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.258 PrimFSM.cpp(37) FSM: WebSocketManager id: 0; > St: 0 ACTIVE Pr: 47362:0 CONFIG_SET_IND ()
+2026-04-10 11:27:45.258 PrimFSM.cpp(72) FSM: WebSocketManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.259 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 47362:0 CONFIG_SET_IND ()
+2026-04-10 11:27:45.260 PrimFSM.cpp(37) FSM: Cosmos id: 0; > St: 0 ACTIVE Pr: 47362:0 CONFIG_SET_IND ()
+2026-04-10 11:27:45.260 PrimFSM.cpp(72) FSM: Cosmos id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.260 PrimFSM.cpp(37) FSM: Cosmos id: 0; > St: 0 ACTIVE Pr: 47363:26 CMD_GET_STAT_REQ (: info.id: 5)
+2026-04-10 11:27:45.260 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:45.260 PrimFSM.cpp(72) FSM: Cosmos id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.260 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 47363:27 CMD_GET_STAT_RESP (: info.id: 5)
+2026-04-10 11:27:45.260 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:45.261 PrimFSM.cpp(37) FSM: MCU.default id: 0; > St: 4 ACTIVE Pr: 184:25 SI_COMMAND_IND ((0, 4): prim=PREORDER_WITH_VIDEO_ACK, additional=common=20;{1;25000;25002;};{2;25004;25006;};{3;25008;25010;};{4;25012;25014;};{5;25016;25018;};{6;25020;25022;};{7;25024;25026;};{8;25028;25030;};{9;25032;25034;};{10;25036;25038;};{11;25040;25042;};{12;25044;25046;};{13;25048;25050;};{14;25052;25054;};{15;25056;25058;};{16;25060;25062;};{17;25064;25066;};{18;25068;25070;};{19;25072;25074;};{20;25076;25078;};video=20;{21;30000;};{22;30002;};{23;30004;};{24;30006;};{25;30008;};{26;30010;};{27;30012;};{28;30014;};{29;30016;};{30;30018;};{31;30020;};{32;30022;};{33;30024;};{34;30026;};{35;30028;};{36;30030;};{37;30032;};{38;30034;};{39;30036;};{40;30038;};)
+2026-04-10 11:27:45.261 PrimFSM.cpp(72) FSM: MCU.default id: 0; < St: 4 ACTIVE
+2026-04-10 11:27:45.261 PrimFSM.cpp(37) FSM: SurrogateRegisterManager.0 id: 0; > St: 0 ACTIVE Pr: 47381:0 SURROGATE_REGISTER_LOAD_CONFIG_IND ()
+2026-04-10 11:27:45.261 PrimFSM.cpp(72) FSM: SurrogateRegisterManager.0 id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.261 PrimFSM.cpp(37) FSM: StatManager id: 0; > St: 0 ACTIVE Pr: 47368:2 SET_VALUE_IND ()
+2026-04-10 11:27:45.302 PrimFSM.cpp(72) FSM: StatManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.303 PrimFSM.cpp(37) FSM: MCU.default id: 0; > St: 4 ACTIVE Pr: 184:25 SI_COMMAND_IND ((0, 4): prim=PREORDER_WITH_VIDEO_ACK, additional=common=20;{41;25000;25002;};{42;25004;25006;};{43;25008;25010;};{44;25012;25014;};{45;25016;25018;};{46;25020;25022;};{47;25024;25026;};{48;25028;25030;};{49;25032;25034;};{50;25036;25038;};{51;25040;25042;};{52;25044;25046;};{53;25048;25050;};{54;25052;25054;};{55;25056;25058;};{56;25060;25062;};{57;25064;25066;};{58;25068;25070;};{59;25072;25074;};{60;25076;25078;};video=20;{61;30000;};{62;30002;};{63;30004;};{64;30006;};{65;30008;};{66;30010;};{67;30012;};{68;30014;};{69;30016;};{70;30018;};{71;30020;};{72;30022;};{73;30024;};{74;30026;};{75;30028;};{76;30030;};{77;30032;};{78;30034;};{79;30036;};{80;30038;};)
+2026-04-10 11:27:45.303 PrimFSM.cpp(72) FSM: MCU.default id: 0; < St: 4 ACTIVE
+2026-04-10 11:27:45.303 PrimFSM.cpp(37) FSM: HttpManager id: 0; > St: 0 ACTIVE Pr: 3361:0 HTTP_GET_IND (CA = [Sg.HTTP.SDir.1.SCL.0,5] | RemoteAddress = 127.0.0.1:33656 | LocalAddress = 127.0.0.1:8500 | TempFilePresent = 0
+GET //config/all HTTP/1.1
+Host: 127.0.0.1:8500
+User-Agent: python-requests/2.28.2
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+[REDACTED]
+2026-04-10 11:27:45.304 PrimFSM.cpp(72) FSM: HttpManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.304 PrimFSM.cpp(37) FSM: ApManager id: 0; > St: 0 ACTIVE Pr: 47384:0 AP_MANAGER_UPDATE_VALUES_TIMER_IND ()
+2026-04-10 11:27:45.304 PrimFSM.cpp(72) FSM: ApManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.304 PrimFSM.cpp(37) FSM: AlgProxy id: 0; > St: 0 ACTIVE Pr: 47385:5 ALG_PROXY_MCU_STAT_IND ()
+2026-04-10 11:27:45.304 PrimFSM.cpp(72) FSM: AlgProxy id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.304 PrimFSM.cpp(37) FSM: StatManager id: 0; > St: 0 ACTIVE Pr: 47368:6 GET_ALL_VALUE_REQ ()
+2026-04-10 11:27:45.304 PrimFSM.cpp(72) FSM: StatManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.304 PrimFSM.cpp(37) FSM: AlgProxy id: 0; > St: 0 ACTIVE Pr: 47373:0 STAT_ALG_GET_GLOBAL_REQ ()
+2026-04-10 11:27:45.304 PrimFSM.cpp(72) FSM: AlgProxy id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.304 PrimFSM.cpp(37) FSM: StatManager id: 0; > St: 0 ACTIVE Pr: 47373:1 STAT_ALG_GET_GLOBAL_RESP ()
+2026-04-10 11:27:45.304 PrimFSM.cpp(72) FSM: StatManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.306 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 47385:6 ALG_PROXY_MCU_STAT_RESP ()
+2026-04-10 11:27:45.306 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:45.306 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 47372:2 STAT_CONGESTION_GET_DENIED_COUNTERS_REQ ()
+2026-04-10 11:27:45.306 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:45.306 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 47372:0 STAT_CONGESTION_GET_GLOBAL_REQ ()
+2026-04-10 11:27:45.306 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:45.307 Congestion.cpp(768) FSM: Congestion id: 0; > St: 0 ACTIVE Pr: 47378:0 CONG_STAT_GET_GLOBAL_COUNTERS_REQ ()
+2026-04-10 11:27:45.309 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 47378:3 CONG_STAT_GET_DENIED_COUNTERS_RESP ()
+2026-04-10 11:27:45.309 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:45.309 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 47378:1 CONG_STAT_GET_GLOBAL_COUNTERS_RESP ()
+2026-04-10 11:27:45.309 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:45.310 PrimFSM.cpp(37) FSM: MCU.default id: 0; > St: 4 ACTIVE Pr: 184:25 SI_COMMAND_IND ((0, 4): prim=PREORDER_WITH_VIDEO_ACK, additional=common=20;{81;25000;25002;};{82;25004;25006;};{83;25008;25010;};{84;25012;25014;};{85;25016;25018;};{86;25020;25022;};{87;25024;25026;};{88;25028;25030;};{89;25032;25034;};{90;25036;25038;};{91;25040;25042;};{92;25044;25046;};{93;25048;25050;};{94;25052;25054;};{95;25056;25058;};{96;25060;25062;};{97;25064;25066;};{98;25068;25070;};{99;25072;25074;};{100;25076;25078;};video=20;{101;30000;};{102;30002;};{103;30004;};{104;30006;};{105;30008;};{106;30010;};{107;30012;};{108;30014;};{109;30016;};{110;30018;};{111;30020;};{112;30022;};{113;30024;};{114;30026;};{115;30028;};{116;30030;};{117;30032;};{118;30034;};{119;30036;};{120;30038;};)
+2026-04-10 11:27:45.311 PrimFSM.cpp(72) FSM: MCU.default id: 0; < St: 4 ACTIVE
+2026-04-10 11:27:45.311 PrimFSM.cpp(37) FSM: HttpManager id: 0; > St: 0 ACTIVE Pr: 3361:1 HTTP_POST_IND (CA = [Sg.HTTP.SDir.1.SCL.0,6] | RemoteAddress = 127.0.0.1:33656 | LocalAddress = 127.0.0.1:8500 | TempFilePresent = 0
+POST //config/main/load HTTP/1.1
+Host: 127.0.0.1:8500
+User-Agent: python-requests/2.28.2
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+[REDACTED]
+Content-Type: application/json    //mime_part_header
+
+{"alg": {"mcu": [{"description": "", "group": "default", "hostport": {"host": "127.0.0.1", "port": 2040}, "subnetworks": [{"audio-channels": 20, "interface": "127.0.0.1", "network": "USER-MCU-NETWORK", "video-channels": 20}, {"audio-channels": 20, "interface": "127.0.0.1", "network": "WS-MCU-NETWORK", "video-channels": 20}, {"audio-channels": 20, "interface": "127.0.0.1", "network": "SERVICE-MCU-NETWORK", "video-channels": 20}, {"audio-channels": 20, "interface": "127.0.0.1", "network": "OPERATOR-MCU-NETWORK", "video-channels": 20}]}]}, "callDumper": {}, "congestion": {"config": {"globalProfile": {"coRps": 100, "cps": 100, "origCps": 100, "regPs": 100, "responsePs": 100, "rps": 100, "simultaneousCall": 1000, "simultaneousOrigCall": 1000, "simultaneousReg": 1000, "simultaneousSub": 10000000, "simultaneousTermCall": 1000, "termCps": 100}, "limits": {"default": {"coRps": 1000, "cps": 100, "regPs": 100, "responsePs": 1000, "rps": 1000, "simultaneousCall": 1000, "simultaneousOrigCall": 1000, "simultaneousReg": 1000, "simultaneousSub": 1000000, "simultaneousTermCall": 1000, "termCps": 100}}, "profiles": {"additional": {}, "default": {"aor": {"authBorderForPer": 100, "authPer": 0.3, "avCps": 100, "avRps": 200, "cps": 500, "failAuthAbs": 100, "malformedAbs": 100, "malformedBorderForPer": 100, "malformedPer": 0.3, "regPs": 5000, "responsePs": 1000, "rps": 1000, "simultaneousCall": 100, "simultaneousOrigCall": 100, "simultaneousReg": 100, "simultaneousSub": 1000000, "simultaneousTermCall": 100, "termCps": 500}, "gate": {"authBorderForPer": 100, "authPer": 0.5, "avCps": 500, "avRps": 1000, "cps": 1000, "failAuthAbs": 250, "malformedAbs": 250, "malformedBorderForPer": 100, "malformedPer": 0.5, "regPs": 10000, "responsePs": 1000, "rps": 100, "simultaneousCall": 3500, "simultaneousOrigCall": 3500, "simultaneousReg": 3500, "simultaneousSub": 35000000, "simultaneousTermCall": 3500, "termCps": 1000}, "ip": {"authBorderForPer": 100, "authPer": 0.5, "avCps": 500, "avRps": 1000, "cps": 1000, "failAuthAbs": 250, "malformedAbs": 250, "malformedBorderForPer": 100, "malformedPer": 0.5, "regPs": 10000, "responsePs": 1000, "rps": 100, "simultaneousCall": 3500, "simultaneousOrigCall": 3500, "simultaneousReg": 3500, "simultaneousSub": 3500000, "simultaneousTermCall": 3500, "termCps": 1000}}}}, "matchers": {"aor": [], "network": []}}, "cutter": {}, "h323": {"externalMediaNetwork": "empty", "internalMediaNetwork": "empty", "service": {"host": "127.0.0.1", "port": 1720}}, "http": {"users": [{"ha1": "3b9775665e13ee265b2a7ec758c9a8cf", "level": "admin", "name": "support"}]}, "restore": {}, "sbc": {"codecs": {}, "expire": {"common": {"max": 3600, "min": 5}}, "mediaProfiles": {"empty": {"codecs": {}, "forcedProxy": false, "ptMap": {}}, "media-profile-server": {"allowMediaInconsistency": false, "codecs": {}, "forcedProxy": true, "ptMap": {}, "videoCodecs": {}}}, "routing": {"operator": [], "user": []}, "services": {}, "storage": {}, "userProfiles": {}, "videoCodecs": {}}, "sip": {"TLS": {"additional": []}, "timer": {"T0": 3200, "T1": 200, "T2": 1000, "TB": 4000, "TF": 3200, "TH": 4000, "TJ": 12800, "TP": 600000, "noResponseTimeout": 16000}, "internal": [{"gateId": "SERVICE-GATE", "hostport": {"host": "127.0.0.1", "port": 37659}, "type": "BOTH", "dns": {"servers": ["127.0.0.1"]}}]}})
+2026-04-10 11:27:45.311 PrimFSM.cpp(72) FSM: HttpManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.311 PrimFSM.cpp(37) FSM: StatManager id: 0; > St: 0 ACTIVE Pr: 47372:3 STAT_CONGESTION_GET_DENIED_COUNTERS_RESP ()
+2026-04-10 11:27:45.311 PrimFSM.cpp(72) FSM: StatManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.311 PrimFSM.cpp(37) FSM: StatManager id: 0; > St: 0 ACTIVE Pr: 47372:1 STAT_CONGESTION_GET_GLOBAL_RESP ()
+2026-04-10 11:27:45.312 PrimFSM.cpp(72) FSM: StatManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.312 PrimFSM.cpp(37) FSM: Config id: 0; > St: 1 IDLE Pr: 47362:2 CONFIG_LOAD_REQ (8)
+2026-04-10 11:27:45.314 PrimFSM.cpp(72) FSM: Config id: 0; < St: 2 ACTIVE
+2026-04-10 11:27:45.314 PrimFSM.cpp(37) FSM: ApManager id: 0; > St: 0 ACTIVE Pr: 47368:7 GET_ALL_VALUE_RESP ()
+2026-04-10 11:27:45.315 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 47362:5 CONFIG_APPLY_REQ ()
+2026-04-10 11:27:45.315 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 2 APPLYING_CONFIG
+2026-04-10 11:27:45.318 PrimFSM.cpp(72) FSM: ApManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.318 PrimFSM.cpp(37) FSM: MCU.default id: 0; > St: 4 ACTIVE Pr: 184:25 SI_COMMAND_IND ((0, 4): prim=PREORDER_WITH_VIDEO_ACK, additional=common=20;{121;25000;25002;};{122;25004;25006;};{123;25008;25010;};{124;25012;25014;};{125;25016;25018;};{126;25020;25022;};{127;25024;25026;};{128;25028;25030;};{129;25032;25034;};{130;25036;25038;};{131;25040;25042;};{132;25044;25046;};{133;25048;25050;};{134;25052;25054;};{135;25056;25058;};{136;25060;25062;};{137;25064;25066;};{138;25068;25070;};{139;25072;25074;};{140;25076;25078;};video=20;{141;30000;};{142;30002;};{143;30004;};{144;30006;};{145;30008;};{146;30010;};{147;30012;};{148;30014;};{149;30016;};{150;30018;};{151;30020;};{152;30022;};{153;30024;};{154;30026;};{155;30028;};{156;30030;};{157;30032;};{158;30034;};{159;30036;};{160;30038;};)
+2026-04-10 11:27:45.318 PrimFSM.cpp(72) FSM: MCU.default id: 0; < St: 4 ACTIVE
+2026-04-10 11:27:45.318 PrimFSM.cpp(37) FSM: StatManager id: 0; > St: 0 ACTIVE Pr: 47368:2 SET_VALUE_IND ()
+2026-04-10 11:27:45.318 PrimFSM.cpp(72) FSM: StatManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.321 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 2 APPLYING_CONFIG Pr: 34:21 CM_CONFIG_CHANGE_CONF ()
+2026-04-10 11:27:45.322 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:45.323 PrimFSM.cpp(37) FSM: Config id: 0; > St: 2 ACTIVE Pr: 47362:6 CONFIG_APPLY_CONF ()
+2026-04-10 11:27:45.323 PrimFSM.cpp(72) FSM: Config id: 0; < St: 1 IDLE
+2026-04-10 11:27:45.323 PrimFSM.cpp(37) FSM: HttpManager id: 0; > St: 0 ACTIVE Pr: 47362:3 CONFIG_LOAD_CONF (8)
+2026-04-10 11:27:45.324 PrimFSM.cpp(72) FSM: HttpManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.324 PrimFSM.cpp(37) FSM: CongestionMalformedMessagesMatcher id: 0; > St: 2 ACTIVE Pr: 47362:0 CONFIG_SET_IND ()
+2026-04-10 11:27:45.324 PrimFSM.cpp(72) FSM: CongestionMalformedMessagesMatcher id: 0; < St: 2 ACTIVE
+2026-04-10 11:27:45.324 PrimFSM.cpp(37) FSM: HttpManager id: 0; > St: 0 ACTIVE Pr: 47362:0 CONFIG_SET_IND ()
+2026-04-10 11:27:45.324 PrimFSM.cpp(72) FSM: HttpManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.324 PrimFSM.cpp(37) FSM: WebSocketManager id: 0; > St: 0 ACTIVE Pr: 47362:0 CONFIG_SET_IND ()
+2026-04-10 11:27:45.324 PrimFSM.cpp(72) FSM: WebSocketManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.324 PrimFSM.cpp(37) FSM: Cosmos id: 0; > St: 0 ACTIVE Pr: 47362:0 CONFIG_SET_IND ()
+2026-04-10 11:27:45.324 PrimFSM.cpp(72) FSM: Cosmos id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.325 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 47362:0 CONFIG_SET_IND ()
+2026-04-10 11:27:45.325 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:45.326 PrimFSM.cpp(37) FSM: DatabaseManager id: 0; > St: 3 ACTIVE Pr: 47362:0 CONFIG_SET_IND ()
+2026-04-10 11:27:45.326 Congestion.cpp(768) FSM: Congestion id: 0; > St: 0 ACTIVE Pr: 47377:13 CONG_LIMITS_MATCHER_ADD_GATE_IND ()
+2026-04-10 11:27:45.326 PrimFSM.cpp(72) FSM: DatabaseManager id: 0; < St: 3 ACTIVE
+2026-04-10 11:27:45.327 PrimFSM.cpp(37) FSM: Cosmos id: 0; > St: 0 ACTIVE Pr: 47363:26 CMD_GET_STAT_REQ (: info.id: 9)
+2026-04-10 11:27:45.327 PrimFSM.cpp(72) FSM: Cosmos id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.328 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 47363:27 CMD_GET_STAT_RESP (: info.id: 9)
+2026-04-10 11:27:45.328 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:45.330 PrimFSM.cpp(37) FSM: StatManager id: 0; > St: 0 ACTIVE Pr: 47368:2 SET_VALUE_IND ()
+2026-04-10 11:27:45.371 PrimFSM.cpp(72) FSM: StatManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.372 PrimFSM.cpp(37) FSM: HttpManager id: 0; > St: 0 ACTIVE Pr: 3361:0 HTTP_GET_IND (CA = [Sg.HTTP.SDir.1.SCL.0,7] | RemoteAddress = 127.0.0.1:33656 | LocalAddress = 127.0.0.1:8500 | TempFilePresent = 0
+GET //config/all HTTP/1.1
+Host: 127.0.0.1:8500
+User-Agent: python-requests/2.28.2
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+[REDACTED]
+2026-04-10 11:27:45.372 PrimFSM.cpp(72) FSM: HttpManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.379 PrimFSM.cpp(37) FSM: HttpManager id: 0; > St: 0 ACTIVE Pr: 3361:1 HTTP_POST_IND (CA = [Sg.HTTP.SDir.1.SCL.0,8] | RemoteAddress = 127.0.0.1:33656 | LocalAddress = 127.0.0.1:8500 | TempFilePresent = 0
+POST //config/main/load HTTP/1.1
+Host: 127.0.0.1:8500
+User-Agent: python-requests/2.28.2
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+[REDACTED]
+Content-Type: application/json    //mime_part_header
+
+{"alg": {"mcu": [{"description": "", "group": "default", "hostport": {"host": "127.0.0.1", "port": 2040}, "subnetworks": [{"audio-channels": 20, "interface": "127.0.0.1", "network": "USER-MCU-NETWORK", "video-channels": 20}, {"audio-channels": 20, "interface": "127.0.0.1", "network": "WS-MCU-NETWORK", "video-channels": 20}, {"audio-channels": 20, "interface": "127.0.0.1", "network": "SERVICE-MCU-NETWORK", "video-channels": 20}, {"audio-channels": 20, "interface": "127.0.0.1", "network": "OPERATOR-MCU-NETWORK", "video-channels": 20}]}]}, "callDumper": {}, "congestion": {"config": {"globalProfile": {"coRps": 100, "cps": 100, "origCps": 100, "regPs": 100, "responsePs": 100, "rps": 100, "simultaneousCall": 1000, "simultaneousOrigCall": 1000, "simultaneousReg": 1000, "simultaneousSub": 10000000, "simultaneousTermCall": 1000, "termCps": 100}, "limits": {"default": {"coRps": 1000, "cps": 100, "regPs": 100, "responsePs": 1000, "rps": 1000, "simultaneousCall": 1000, "simultaneousOrigCall": 1000, "simultaneousReg": 1000, "simultaneousSub": 1000000, "simultaneousTermCall": 1000, "termCps": 100}}, "profiles": {"additional": {}, "default": {"aor": {"authBorderForPer": 100, "authPer": 0.3, "avCps": 100, "avRps": 200, "cps": 500, "failAuthAbs": 100, "malformedAbs": 100, "malformedBorderForPer": 100, "malformedPer": 0.3, "regPs": 5000, "responsePs": 1000, "rps": 1000, "simultaneousCall": 100, "simultaneousOrigCall": 100, "simultaneousReg": 100, "simultaneousSub": 1000000, "simultaneousTermCall": 100, "termCps": 500}, "gate": {"authBorderForPer": 100, "authPer": 0.5, "avCps": 500, "avRps": 1000, "cps": 1000, "failAuthAbs": 250, "malformedAbs": 250, "malformedBorderForPer": 100, "malformedPer": 0.5, "regPs": 10000, "responsePs": 1000, "rps": 100, "simultaneousCall": 3500, "simultaneousOrigCall": 3500, "simultaneousReg": 3500, "simultaneousSub": 35000000, "simultaneousTermCall": 3500, "termCps": 1000}, "ip": {"authBorderForPer": 100, "authPer": 0.5, "avCps": 500, "avRps": 1000, "cps": 1000, "failAuthAbs": 250, "malformedAbs": 250, "malformedBorderForPer": 100, "malformedPer": 0.5, "regPs": 10000, "responsePs": 1000, "rps": 100, "simultaneousCall": 3500, "simultaneousOrigCall": 3500, "simultaneousReg": 3500, "simultaneousSub": 3500000, "simultaneousTermCall": 3500, "termCps": 1000}}}}, "matchers": {"aor": [], "network": []}}, "cutter": {}, "h323": {"externalMediaNetwork": "empty", "internalMediaNetwork": "empty", "service": {"host": "127.0.0.1", "port": 1720}}, "http": {"users": [{"ha1": "3b9775665e13ee265b2a7ec758c9a8cf", "level": "admin", "name": "support"}]}, "restore": {}, "sbc": {"codecs": {}, "expire": {"common": {"max": 3600, "min": 5}}, "mediaProfiles": {"empty": {"codecs": {}, "forcedProxy": false, "ptMap": {}}, "media-profile-server": {"allowMediaInconsistency": false, "codecs": {}, "forcedProxy": true, "ptMap": {}, "videoCodecs": {}}}, "routing": {"operator": [], "user": []}, "services": {"test-service": {"mediaProfile": "media-profile-server", "mediaNetwork": "SERVICE-MCU-NETWORK", "pinger": {"enabled": false, "period": 5}, "config": {"domain": "service.asbc.net"}, "trunks": {"main": {"hostport": {"host": "127.0.0.1", "port": 52721}, "connection": "UDP", "gateId": "SERVICE-GATE", "strongLink": true}}}}, "storage": {}, "userProfiles": {}, "videoCodecs": {}}, "sip": {"TLS": {"additional": []}, "internal": [{"dns": {"servers": ["127.0.0.1"]}, "gateId": "SERVICE-GATE", "hostport": {"host": "127.0.0.1", "port": 37659}, "type": "BOTH"}], "timer": {"T0": 3200, "T1": 200, "T2": 1000, "TB": 4000, "TF": 3200, "TH": 4000, "TJ": 12800, "TP": 600000, "noResponseTimeout": 16000}}})
+2026-04-10 11:27:45.379 PrimFSM.cpp(72) FSM: HttpManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.379 PrimFSM.cpp(37) FSM: Config id: 0; > St: 1 IDLE Pr: 47362:2 CONFIG_LOAD_REQ (10)
+2026-04-10 11:27:45.383 PrimFSM.cpp(72) FSM: Config id: 0; < St: 2 ACTIVE
+2026-04-10 11:27:45.383 PrimFSM.cpp(37) FSM: StatManager id: 0; > St: 0 ACTIVE Pr: 47368:2 SET_VALUE_IND ()
+2026-04-10 11:27:45.383 PrimFSM.cpp(72) FSM: StatManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.383 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 47362:5 CONFIG_APPLY_REQ ()
+2026-04-10 11:27:45.383 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:45.386 PrimFSM.cpp(37) FSM: Config id: 0; > St: 2 ACTIVE Pr: 47362:6 CONFIG_APPLY_CONF ()
+2026-04-10 11:27:45.387 PrimFSM.cpp(72) FSM: Config id: 0; < St: 1 IDLE
+2026-04-10 11:27:45.387 PrimFSM.cpp(37) FSM: DatabaseManager id: 0; > St: 3 ACTIVE Pr: 47362:0 CONFIG_SET_IND ()
+2026-04-10 11:27:45.387 PrimFSM.cpp(37) FSM: HttpManager id: 0; > St: 0 ACTIVE Pr: 47362:3 CONFIG_LOAD_CONF (10)
+2026-04-10 11:27:45.387 PrimFSM.cpp(72) FSM: DatabaseManager id: 0; < St: 3 ACTIVE
+2026-04-10 11:27:45.387 PrimFSM.cpp(72) FSM: HttpManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.387 PrimFSM.cpp(37) FSM: CongestionMalformedMessagesMatcher id: 0; > St: 2 ACTIVE Pr: 47362:0 CONFIG_SET_IND ()
+2026-04-10 11:27:45.387 PrimFSM.cpp(72) FSM: CongestionMalformedMessagesMatcher id: 0; < St: 2 ACTIVE
+2026-04-10 11:27:45.387 PrimFSM.cpp(37) FSM: HttpManager id: 0; > St: 0 ACTIVE Pr: 47362:0 CONFIG_SET_IND ()
+2026-04-10 11:27:45.387 PrimFSM.cpp(72) FSM: HttpManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.387 PrimFSM.cpp(37) FSM: WebSocketManager id: 0; > St: 0 ACTIVE Pr: 47362:0 CONFIG_SET_IND ()
+2026-04-10 11:27:45.387 PrimFSM.cpp(72) FSM: WebSocketManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.389 PrimFSM.cpp(37) FSM: Cosmos id: 0; > St: 0 ACTIVE Pr: 47362:0 CONFIG_SET_IND ()
+2026-04-10 11:27:45.389 PrimFSM.cpp(72) FSM: Cosmos id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.390 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 47362:0 CONFIG_SET_IND ()
+2026-04-10 11:27:45.390 Congestion.cpp(768) FSM: Congestion id: 0; > St: 0 ACTIVE Pr: 47377:14 CONG_LIMITS_MATCHER_ADD_COMPONENT_IND ()
+2026-04-10 11:27:45.390 Congestion.cpp(768) FSM: Congestion id: 0; > St: 0 ACTIVE Pr: 47377:15 CONG_LIMITS_MATCHER_ADD_SUB_COMPONENT_IND ()
+2026-04-10 11:27:45.390 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:45.390 PrimFSM.cpp(37) FSM: SurrogateRegisterManager.0 id: 0; > St: 0 ACTIVE Pr: 47381:0 SURROGATE_REGISTER_LOAD_CONFIG_IND ()
+2026-04-10 11:27:45.390 PrimFSM.cpp(72) FSM: SurrogateRegisterManager.0 id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.392 PrimFSM.cpp(37) FSM: Cosmos id: 0; > St: 0 ACTIVE Pr: 47363:26 CMD_GET_STAT_REQ (: info.id: 11)
+2026-04-10 11:27:45.392 PrimFSM.cpp(72) FSM: Cosmos id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.393 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 47363:27 CMD_GET_STAT_RESP (: info.id: 11)
+2026-04-10 11:27:45.394 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:45.394 PrimFSM.cpp(37) FSM: StatManager id: 0; > St: 0 ACTIVE Pr: 47368:2 SET_VALUE_IND ()
+2026-04-10 11:27:45.452 PrimFSM.cpp(72) FSM: StatManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.453 PrimFSM.cpp(37) FSM: HttpManager id: 0; > St: 0 ACTIVE Pr: 3361:0 HTTP_GET_IND (CA = [Sg.HTTP.SDir.1.SCL.0,9] | RemoteAddress = 127.0.0.1:33656 | LocalAddress = 127.0.0.1:8500 | TempFilePresent = 0
+GET //config/all HTTP/1.1
+Host: 127.0.0.1:8500
+User-Agent: python-requests/2.28.2
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+[REDACTED]
+2026-04-10 11:27:45.453 PrimFSM.cpp(72) FSM: HttpManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.460 PrimFSM.cpp(37) FSM: HttpManager id: 0; > St: 0 ACTIVE Pr: 3361:1 HTTP_POST_IND (CA = [Sg.HTTP.SDir.1.SCL.0,10] | RemoteAddress = 127.0.0.1:33656 | LocalAddress = 127.0.0.1:8500 | TempFilePresent = 0
+POST //config/main/load HTTP/1.1
+Host: 127.0.0.1:8500
+User-Agent: python-requests/2.28.2
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+[REDACTED]
+Content-Type: application/json    //mime_part_header
+
+{"alg": {"mcu": [{"description": "", "group": "default", "hostport": {"host": "127.0.0.1", "port": 2040}, "subnetworks": [{"audio-channels": 20, "interface": "127.0.0.1", "network": "USER-MCU-NETWORK", "video-channels": 20}, {"audio-channels": 20, "interface": "127.0.0.1", "network": "WS-MCU-NETWORK", "video-channels": 20}, {"audio-channels": 20, "interface": "127.0.0.1", "network": "SERVICE-MCU-NETWORK", "video-channels": 20}, {"audio-channels": 20, "interface": "127.0.0.1", "network": "OPERATOR-MCU-NETWORK", "video-channels": 20}]}]}, "callDumper": {}, "congestion": {"config": {"globalProfile": {"coRps": 100, "cps": 100, "origCps": 100, "regPs": 100, "responsePs": 100, "rps": 100, "simultaneousCall": 1000, "simultaneousOrigCall": 1000, "simultaneousReg": 1000, "simultaneousSub": 10000000, "simultaneousTermCall": 1000, "termCps": 100}, "limits": {"default": {"coRps": 1000, "cps": 100, "regPs": 100, "responsePs": 1000, "rps": 1000, "simultaneousCall": 1000, "simultaneousOrigCall": 1000, "simultaneousReg": 1000, "simultaneousSub": 1000000, "simultaneousTermCall": 1000, "termCps": 100}}, "profiles": {"additional": {}, "default": {"aor": {"authBorderForPer": 100, "authPer": 0.3, "avCps": 100, "avRps": 200, "cps": 500, "failAuthAbs": 100, "malformedAbs": 100, "malformedBorderForPer": 100, "malformedPer": 0.3, "regPs": 5000, "responsePs": 1000, "rps": 1000, "simultaneousCall": 100, "simultaneousOrigCall": 100, "simultaneousReg": 100, "simultaneousSub": 1000000, "simultaneousTermCall": 100, "termCps": 500}, "gate": {"authBorderForPer": 100, "authPer": 0.5, "avCps": 500, "avRps": 1000, "cps": 1000, "failAuthAbs": 250, "malformedAbs": 250, "malformedBorderForPer": 100, "malformedPer": 0.5, "regPs": 10000, "responsePs": 1000, "rps": 100, "simultaneousCall": 3500, "simultaneousOrigCall": 3500, "simultaneousReg": 3500, "simultaneousSub": 35000000, "simultaneousTermCall": 3500, "termCps": 1000}, "ip": {"authBorderForPer": 100, "authPer": 0.5, "avCps": 500, "avRps": 1000, "cps": 1000, "failAuthAbs": 250, "malformedAbs": 250, "malformedBorderForPer": 100, "malformedPer": 0.5, "regPs": 10000, "responsePs": 1000, "rps": 100, "simultaneousCall": 3500, "simultaneousOrigCall": 3500, "simultaneousReg": 3500, "simultaneousSub": 3500000, "simultaneousTermCall": 3500, "termCps": 1000}}}}, "matchers": {"aor": [], "network": []}}, "cutter": {}, "h323": {"externalMediaNetwork": "empty", "internalMediaNetwork": "empty", "service": {"host": "127.0.0.1", "port": 1720}}, "http": {"users": [{"ha1": "3b9775665e13ee265b2a7ec758c9a8cf", "level": "admin", "name": "support"}]}, "restore": {}, "sbc": {"codecs": {}, "expire": {"common": {"max": 3600, "min": 5}}, "mediaProfiles": {"empty": {"codecs": {}, "forcedProxy": false, "ptMap": {}}, "media-profile-server": {"allowMediaInconsistency": false, "codecs": {}, "forcedProxy": true, "ptMap": {}, "videoCodecs": {}}, "media-profile-user": {"videoCodecs": {}, "codecs": {}, "forcedProxy": true, "allowMediaInconsistency": false, "ptMap": {}}}, "routing": {"operator": [], "user": []}, "services": {"test-service": {"config": {"domain": "service.asbc.net"}, "mediaNetwork": "SERVICE-MCU-NETWORK", "mediaProfile": "media-profile-server", "pinger": {"enabled": false, "period": 5}, "trunks": {"main": {"connection": "UDP", "gateId": "SERVICE-GATE", "hostport": {"host": "127.0.0.1", "port": 52721}, "strongLink": true}}}}, "storage": {}, "userProfiles": {}, "videoCodecs": {}}, "sip": {"TLS": {"additional": []}, "internal": [{"dns": {"servers": ["127.0.0.1"]}, "gateId": "SERVICE-GATE", "hostport": {"host": "127.0.0.1", "port": 37659}, "type": "BOTH"}], "timer": {"T0": 3200, "T1": 200, "T2": 1000, "TB": 4000, "TF": 3200, "TH": 4000, "TJ": 12800, "TP": 600000, "noResponseTimeout": 16000}}})
+2026-04-10 11:27:45.460 PrimFSM.cpp(72) FSM: HttpManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.460 PrimFSM.cpp(37) FSM: Config id: 0; > St: 1 IDLE Pr: 47362:2 CONFIG_LOAD_REQ (12)
+2026-04-10 11:27:45.463 PrimFSM.cpp(72) FSM: Config id: 0; < St: 2 ACTIVE
+2026-04-10 11:27:45.463 PrimFSM.cpp(37) FSM: StatManager id: 0; > St: 0 ACTIVE Pr: 47368:2 SET_VALUE_IND ()
+2026-04-10 11:27:45.463 PrimFSM.cpp(72) FSM: StatManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.465 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 47362:5 CONFIG_APPLY_REQ ()
+2026-04-10 11:27:45.466 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:45.466 PrimFSM.cpp(37) FSM: Config id: 0; > St: 2 ACTIVE Pr: 47362:6 CONFIG_APPLY_CONF ()
+2026-04-10 11:27:45.467 PrimFSM.cpp(72) FSM: Config id: 0; < St: 1 IDLE
+2026-04-10 11:27:45.467 PrimFSM.cpp(37) FSM: HttpManager id: 0; > St: 0 ACTIVE Pr: 47362:3 CONFIG_LOAD_CONF (12)
+2026-04-10 11:27:45.467 PrimFSM.cpp(37) FSM: DatabaseManager id: 0; > St: 3 ACTIVE Pr: 47362:0 CONFIG_SET_IND ()
+2026-04-10 11:27:45.467 PrimFSM.cpp(72) FSM: DatabaseManager id: 0; < St: 3 ACTIVE
+2026-04-10 11:27:45.467 PrimFSM.cpp(72) FSM: HttpManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.467 PrimFSM.cpp(37) FSM: CongestionMalformedMessagesMatcher id: 0; > St: 2 ACTIVE Pr: 47362:0 CONFIG_SET_IND ()
+2026-04-10 11:27:45.467 PrimFSM.cpp(72) FSM: CongestionMalformedMessagesMatcher id: 0; < St: 2 ACTIVE
+2026-04-10 11:27:45.467 PrimFSM.cpp(37) FSM: HttpManager id: 0; > St: 0 ACTIVE Pr: 47362:0 CONFIG_SET_IND ()
+2026-04-10 11:27:45.467 PrimFSM.cpp(72) FSM: HttpManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.467 PrimFSM.cpp(37) FSM: WebSocketManager id: 0; > St: 0 ACTIVE Pr: 47362:0 CONFIG_SET_IND ()
+2026-04-10 11:27:45.467 PrimFSM.cpp(72) FSM: WebSocketManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.469 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 47362:0 CONFIG_SET_IND ()
+2026-04-10 11:27:45.469 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:45.470 PrimFSM.cpp(37) FSM: Cosmos id: 0; > St: 0 ACTIVE Pr: 47362:0 CONFIG_SET_IND ()
+2026-04-10 11:27:45.470 PrimFSM.cpp(72) FSM: Cosmos id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.470 PrimFSM.cpp(37) FSM: Cosmos id: 0; > St: 0 ACTIVE Pr: 47363:26 CMD_GET_STAT_REQ (: info.id: 13)
+2026-04-10 11:27:45.470 PrimFSM.cpp(72) FSM: Cosmos id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.470 PrimFSM.cpp(37) FSM: SurrogateRegisterManager.0 id: 0; > St: 0 ACTIVE Pr: 47381:0 SURROGATE_REGISTER_LOAD_CONFIG_IND ()
+2026-04-10 11:27:45.470 PrimFSM.cpp(72) FSM: SurrogateRegisterManager.0 id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.471 Congestion.cpp(768) FSM: Congestion id: 0; > St: 0 ACTIVE Pr: 47377:14 CONG_LIMITS_MATCHER_ADD_COMPONENT_IND ()
+2026-04-10 11:27:45.471 Congestion.cpp(768) FSM: Congestion id: 0; > St: 0 ACTIVE Pr: 47377:15 CONG_LIMITS_MATCHER_ADD_SUB_COMPONENT_IND ()
+2026-04-10 11:27:45.473 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 47363:27 CMD_GET_STAT_RESP (: info.id: 13)
+2026-04-10 11:27:45.473 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:45.473 PrimFSM.cpp(37) FSM: StatManager id: 0; > St: 0 ACTIVE Pr: 47368:2 SET_VALUE_IND ()
+2026-04-10 11:27:45.533 PrimFSM.cpp(72) FSM: StatManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.533 PrimFSM.cpp(37) FSM: HttpManager id: 0; > St: 0 ACTIVE Pr: 3361:0 HTTP_GET_IND (CA = [Sg.HTTP.SDir.1.SCL.0,11] | RemoteAddress = 127.0.0.1:33656 | LocalAddress = 127.0.0.1:8500 | TempFilePresent = 0
+GET //config/all HTTP/1.1
+Host: 127.0.0.1:8500
+User-Agent: python-requests/2.28.2
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+[REDACTED]
+2026-04-10 11:27:45.534 PrimFSM.cpp(72) FSM: HttpManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.541 PrimFSM.cpp(37) FSM: HttpManager id: 0; > St: 0 ACTIVE Pr: 3361:1 HTTP_POST_IND (CA = [Sg.HTTP.SDir.1.SCL.0,12] | RemoteAddress = 127.0.0.1:33656 | LocalAddress = 127.0.0.1:8500 | TempFilePresent = 0
+POST //config/main/load HTTP/1.1
+Host: 127.0.0.1:8500
+User-Agent: python-requests/2.28.2
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+[REDACTED]
+Content-Type: application/json    //mime_part_header
+
+{"alg": {"mcu": [{"description": "", "group": "default", "hostport": {"host": "127.0.0.1", "port": 2040}, "subnetworks": [{"audio-channels": 20, "interface": "127.0.0.1", "network": "USER-MCU-NETWORK", "video-channels": 20}, {"audio-channels": 20, "interface": "127.0.0.1", "network": "WS-MCU-NETWORK", "video-channels": 20}, {"audio-channels": 20, "interface": "127.0.0.1", "network": "SERVICE-MCU-NETWORK", "video-channels": 20}, {"audio-channels": 20, "interface": "127.0.0.1", "network": "OPERATOR-MCU-NETWORK", "video-channels": 20}]}]}, "callDumper": {}, "congestion": {"config": {"globalProfile": {"coRps": 100, "cps": 100, "origCps": 100, "regPs": 100, "responsePs": 100, "rps": 100, "simultaneousCall": 1000, "simultaneousOrigCall": 1000, "simultaneousReg": 1000, "simultaneousSub": 10000000, "simultaneousTermCall": 1000, "termCps": 100}, "limits": {"default": {"coRps": 1000, "cps": 100, "regPs": 100, "responsePs": 1000, "rps": 1000, "simultaneousCall": 1000, "simultaneousOrigCall": 1000, "simultaneousReg": 1000, "simultaneousSub": 1000000, "simultaneousTermCall": 1000, "termCps": 100}}, "profiles": {"additional": {}, "default": {"aor": {"authBorderForPer": 100, "authPer": 0.3, "avCps": 100, "avRps": 200, "cps": 500, "failAuthAbs": 100, "malformedAbs": 100, "malformedBorderForPer": 100, "malformedPer": 0.3, "regPs": 5000, "responsePs": 1000, "rps": 1000, "simultaneousCall": 100, "simultaneousOrigCall": 100, "simultaneousReg": 100, "simultaneousSub": 1000000, "simultaneousTermCall": 100, "termCps": 500}, "gate": {"authBorderForPer": 100, "authPer": 0.5, "avCps": 500, "avRps": 1000, "cps": 1000, "failAuthAbs": 250, "malformedAbs": 250, "malformedBorderForPer": 100, "malformedPer": 0.5, "regPs": 10000, "responsePs": 1000, "rps": 100, "simultaneousCall": 3500, "simultaneousOrigCall": 3500, "simultaneousReg": 3500, "simultaneousSub": 35000000, "simultaneousTermCall": 3500, "termCps": 1000}, "ip": {"authBorderForPer": 100, "authPer": 0.5, "avCps": 500, "avRps": 1000, "cps": 1000, "failAuthAbs": 250, "malformedAbs": 250, "malformedBorderForPer": 100, "malformedPer": 0.5, "regPs": 10000, "responsePs": 1000, "rps": 100, "simultaneousCall": 3500, "simultaneousOrigCall": 3500, "simultaneousReg": 3500, "simultaneousSub": 3500000, "simultaneousTermCall": 3500, "termCps": 1000}}}}, "matchers": {"aor": [], "network": []}}, "cutter": {}, "h323": {"externalMediaNetwork": "empty", "internalMediaNetwork": "empty", "service": {"host": "127.0.0.1", "port": 1720}}, "http": {"users": [{"ha1": "3b9775665e13ee265b2a7ec758c9a8cf", "level": "admin", "name": "support"}]}, "restore": {}, "sbc": {"codecs": {}, "expire": {"common": {"max": 3600, "min": 5}}, "mediaProfiles": {"empty": {"codecs": {}, "forcedProxy": false, "ptMap": {}}, "media-profile-server": {"allowMediaInconsistency": false, "codecs": {}, "forcedProxy": true, "ptMap": {}, "videoCodecs": {}}, "media-profile-user": {"allowMediaInconsistency": false, "codecs": {}, "forcedProxy": true, "ptMap": {}, "videoCodecs": {}}}, "routing": {"operator": [], "user": []}, "services": {"test-service": {"config": {"domain": "service.asbc.net"}, "mediaNetwork": "SERVICE-MCU-NETWORK", "mediaProfile": "media-profile-server", "pinger": {"enabled": false, "period": 5}, "trunks": {"main": {"connection": "UDP", "gateId": "SERVICE-GATE", "hostport": {"host": "127.0.0.1", "port": 52721}, "strongLink": true}}}}, "storage": {}, "userProfiles": {"additional": [{"name": "test-userprofile", "matchingPolicy": "DISABLED", "config": {"allowUnreg": false, "translateDisplayName": true}, "mediaProfile": "media-profile-user", "mediaNetwork": "USER-MCU-NETWORK", "rule": {"aor": ":test-user@?"}}]}, "videoCodecs": {}}, "sip": {"TLS": {"additional": []}, "internal": [{"dns": {"servers": ["127.0.0.1"]}, "gateId": "SERVICE-GATE", "hostport": {"host": "127.0.0.1", "port": 37659}, "type": "BOTH"}], "timer": {"T0": 3200, "T1": 200, "T2": 1000, "TB": 4000, "TF": 3200, "TH": 4000, "TJ": 12800, "TP": 600000, "noResponseTimeout": 16000}}})
+2026-04-10 11:27:45.541 PrimFSM.cpp(72) FSM: HttpManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.541 PrimFSM.cpp(37) FSM: Config id: 0; > St: 1 IDLE Pr: 47362:2 CONFIG_LOAD_REQ (14)
+2026-04-10 11:27:45.545 PrimFSM.cpp(72) FSM: Config id: 0; < St: 2 ACTIVE
+2026-04-10 11:27:45.545 PrimFSM.cpp(37) FSM: StatManager id: 0; > St: 0 ACTIVE Pr: 47368:2 SET_VALUE_IND ()
+2026-04-10 11:27:45.545 PrimFSM.cpp(72) FSM: StatManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.547 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 47362:5 CONFIG_APPLY_REQ ()
+2026-04-10 11:27:45.547 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:45.548 PrimFSM.cpp(37) FSM: Config id: 0; > St: 2 ACTIVE Pr: 47362:6 CONFIG_APPLY_CONF ()
+2026-04-10 11:27:45.549 PrimFSM.cpp(72) FSM: Config id: 0; < St: 1 IDLE
+2026-04-10 11:27:45.549 PrimFSM.cpp(37) FSM: HttpManager id: 0; > St: 0 ACTIVE Pr: 47362:3 CONFIG_LOAD_CONF (14)
+2026-04-10 11:27:45.549 PrimFSM.cpp(72) FSM: HttpManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.549 PrimFSM.cpp(37) FSM: CongestionMalformedMessagesMatcher id: 0; > St: 2 ACTIVE Pr: 47362:0 CONFIG_SET_IND ()
+2026-04-10 11:27:45.549 PrimFSM.cpp(37) FSM: Cosmos id: 0; > St: 0 ACTIVE Pr: 47362:0 CONFIG_SET_IND ()
+2026-04-10 11:27:45.549 PrimFSM.cpp(72) FSM: CongestionMalformedMessagesMatcher id: 0; < St: 2 ACTIVE
+2026-04-10 11:27:45.549 PrimFSM.cpp(37) FSM: HttpManager id: 0; > St: 0 ACTIVE Pr: 47362:0 CONFIG_SET_IND ()
+2026-04-10 11:27:45.549 PrimFSM.cpp(72) FSM: HttpManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.549 PrimFSM.cpp(37) FSM: WebSocketManager id: 0; > St: 0 ACTIVE Pr: 47362:0 CONFIG_SET_IND ()
+2026-04-10 11:27:45.549 PrimFSM.cpp(72) FSM: WebSocketManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.550 PrimFSM.cpp(37) FSM: DatabaseManager id: 0; > St: 3 ACTIVE Pr: 47362:0 CONFIG_SET_IND ()
+2026-04-10 11:27:45.550 PrimFSM.cpp(72) FSM: DatabaseManager id: 0; < St: 3 ACTIVE
+2026-04-10 11:27:45.550 PrimFSM.cpp(72) FSM: Cosmos id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.550 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 47362:0 CONFIG_SET_IND ()
+2026-04-10 11:27:45.551 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:45.553 PrimFSM.cpp(37) FSM: SurrogateRegisterManager.0 id: 0; > St: 0 ACTIVE Pr: 47381:0 SURROGATE_REGISTER_LOAD_CONFIG_IND ()
+2026-04-10 11:27:45.553 Congestion.cpp(768) FSM: Congestion id: 0; > St: 0 ACTIVE Pr: 47377:14 CONG_LIMITS_MATCHER_ADD_COMPONENT_IND ()
+2026-04-10 11:27:45.553 Congestion.cpp(768) FSM: Congestion id: 0; > St: 0 ACTIVE Pr: 47377:15 CONG_LIMITS_MATCHER_ADD_SUB_COMPONENT_IND ()
+2026-04-10 11:27:45.553 PrimFSM.cpp(72) FSM: SurrogateRegisterManager.0 id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.553 PrimFSM.cpp(37) FSM: Cosmos id: 0; > St: 0 ACTIVE Pr: 47363:26 CMD_GET_STAT_REQ (: info.id: 15)
+2026-04-10 11:27:45.553 PrimFSM.cpp(72) FSM: Cosmos id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.554 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 47363:27 CMD_GET_STAT_RESP (: info.id: 15)
+2026-04-10 11:27:45.554 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:45.556 PrimFSM.cpp(37) FSM: StatManager id: 0; > St: 0 ACTIVE Pr: 47368:2 SET_VALUE_IND ()
+2026-04-10 11:27:45.613 PrimFSM.cpp(72) FSM: StatManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.613 PrimFSM.cpp(37) FSM: HttpManager id: 0; > St: 0 ACTIVE Pr: 3361:0 HTTP_GET_IND (CA = [Sg.HTTP.SDir.1.SCL.0,13] | RemoteAddress = 127.0.0.1:33656 | LocalAddress = 127.0.0.1:8500 | TempFilePresent = 0
+GET //config/all HTTP/1.1
+Host: 127.0.0.1:8500
+User-Agent: python-requests/2.28.2
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+[REDACTED]
+2026-04-10 11:27:45.614 PrimFSM.cpp(72) FSM: HttpManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.621 PrimFSM.cpp(37) FSM: HttpManager id: 0; > St: 0 ACTIVE Pr: 3361:1 HTTP_POST_IND (CA = [Sg.HTTP.SDir.1.SCL.0,14] | RemoteAddress = 127.0.0.1:33656 | LocalAddress = 127.0.0.1:8500 | TempFilePresent = 0
+POST //config/main/load HTTP/1.1
+Host: 127.0.0.1:8500
+User-Agent: python-requests/2.28.2
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+[REDACTED]
+Content-Type: application/json    //mime_part_header
+
+{"alg": {"mcu": [{"description": "", "group": "default", "hostport": {"host": "127.0.0.1", "port": 2040}, "subnetworks": [{"audio-channels": 20, "interface": "127.0.0.1", "network": "USER-MCU-NETWORK", "video-channels": 20}, {"audio-channels": 20, "interface": "127.0.0.1", "network": "WS-MCU-NETWORK", "video-channels": 20}, {"audio-channels": 20, "interface": "127.0.0.1", "network": "SERVICE-MCU-NETWORK", "video-channels": 20}, {"audio-channels": 20, "interface": "127.0.0.1", "network": "OPERATOR-MCU-NETWORK", "video-channels": 20}]}]}, "callDumper": {}, "congestion": {"config": {"globalProfile": {"coRps": 100, "cps": 100, "origCps": 100, "regPs": 100, "responsePs": 100, "rps": 100, "simultaneousCall": 1000, "simultaneousOrigCall": 1000, "simultaneousReg": 1000, "simultaneousSub": 10000000, "simultaneousTermCall": 1000, "termCps": 100}, "limits": {"default": {"coRps": 1000, "cps": 100, "regPs": 100, "responsePs": 1000, "rps": 1000, "simultaneousCall": 1000, "simultaneousOrigCall": 1000, "simultaneousReg": 1000, "simultaneousSub": 1000000, "simultaneousTermCall": 1000, "termCps": 100}}, "profiles": {"additional": {}, "default": {"aor": {"authBorderForPer": 100, "authPer": 0.3, "avCps": 100, "avRps": 200, "cps": 500, "failAuthAbs": 100, "malformedAbs": 100, "malformedBorderForPer": 100, "malformedPer": 0.3, "regPs": 5000, "responsePs": 1000, "rps": 1000, "simultaneousCall": 100, "simultaneousOrigCall": 100, "simultaneousReg": 100, "simultaneousSub": 1000000, "simultaneousTermCall": 100, "termCps": 500}, "gate": {"authBorderForPer": 100, "authPer": 0.5, "avCps": 500, "avRps": 1000, "cps": 1000, "failAuthAbs": 250, "malformedAbs": 250, "malformedBorderForPer": 100, "malformedPer": 0.5, "regPs": 10000, "responsePs": 1000, "rps": 100, "simultaneousCall": 3500, "simultaneousOrigCall": 3500, "simultaneousReg": 3500, "simultaneousSub": 35000000, "simultaneousTermCall": 3500, "termCps": 1000}, "ip": {"authBorderForPer": 100, "authPer": 0.5, "avCps": 500, "avRps": 1000, "cps": 1000, "failAuthAbs": 250, "malformedAbs": 250, "malformedBorderForPer": 100, "malformedPer": 0.5, "regPs": 10000, "responsePs": 1000, "rps": 100, "simultaneousCall": 3500, "simultaneousOrigCall": 3500, "simultaneousReg": 3500, "simultaneousSub": 3500000, "simultaneousTermCall": 3500, "termCps": 1000}}}}, "matchers": {"aor": [], "network": []}}, "cutter": {}, "h323": {"externalMediaNetwork": "empty", "internalMediaNetwork": "empty", "service": {"host": "127.0.0.1", "port": 1720}}, "http": {"users": [{"ha1": "3b9775665e13ee265b2a7ec758c9a8cf", "level": "admin", "name": "support"}]}, "restore": {}, "sbc": {"codecs": {}, "expire": {"common": {"max": 3600, "min": 5}}, "mediaProfiles": {"empty": {"codecs": {}, "forcedProxy": false, "ptMap": {}}, "media-profile-server": {"allowMediaInconsistency": false, "codecs": {}, "forcedProxy": true, "ptMap": {}, "videoCodecs": {}}, "media-profile-user": {"allowMediaInconsistency": false, "codecs": {}, "forcedProxy": true, "ptMap": {}, "videoCodecs": {}}}, "routing": {"operator": [], "user": []}, "services": {"test-service": {"config": {"domain": "service.asbc.net"}, "mediaNetwork": "SERVICE-MCU-NETWORK", "mediaProfile": "media-profile-server", "pinger": {"enabled": false, "period": 5}, "trunks": {"main": {"connection": "UDP", "gateId": "SERVICE-GATE", "hostport": {"host": "127.0.0.1", "port": 52721}, "strongLink": true}}}}, "storage": {}, "userProfiles": {"additional": [{"config": {"allowUnreg": false, "translateDisplayName": true}, "matchingPolicy": "DISABLED", "mediaNetwork": "USER-MCU-NETWORK", "mediaProfile": "media-profile-user", "name": "test-userprofile", "rule": {"aor": ":test-user@?"}}]}, "videoCodecs": {}}, "sip": {"TLS": {"additional": []}, "internal": [{"dns": {"servers": ["127.0.0.1"]}, "gateId": "SERVICE-GATE", "hostport": {"host": "127.0.0.1", "port": 37659}, "type": "BOTH"}], "timer": {"T0": 3200, "T1": 200, "T2": 1000, "TB": 4000, "TF": 3200, "TH": 4000, "TJ": 12800, "TP": 600000, "noResponseTimeout": 16000}, "external": [{"gateId": "USER-GATE", "hostport": {"host": "127.0.0.1", "port": 42875}, "type": "BOTH", "dns": {"servers": ["127.0.0.1"]}}]}})
+2026-04-10 11:27:45.621 PrimFSM.cpp(72) FSM: HttpManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.621 PrimFSM.cpp(37) FSM: Config id: 0; > St: 1 IDLE Pr: 47362:2 CONFIG_LOAD_REQ (16)
+2026-04-10 11:27:45.624 PrimFSM.cpp(72) FSM: Config id: 0; < St: 2 ACTIVE
+2026-04-10 11:27:45.624 PrimFSM.cpp(37) FSM: StatManager id: 0; > St: 0 ACTIVE Pr: 47368:2 SET_VALUE_IND ()
+2026-04-10 11:27:45.624 PrimFSM.cpp(72) FSM: StatManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.625 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 47362:5 CONFIG_APPLY_REQ ()
+2026-04-10 11:27:45.625 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 2 APPLYING_CONFIG
+2026-04-10 11:27:45.631 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 2 APPLYING_CONFIG Pr: 34:21 CM_CONFIG_CHANGE_CONF ()
+2026-04-10 11:27:45.631 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:45.634 PrimFSM.cpp(37) FSM: Config id: 0; > St: 2 ACTIVE Pr: 47362:6 CONFIG_APPLY_CONF ()
+2026-04-10 11:27:45.635 PrimFSM.cpp(72) FSM: Config id: 0; < St: 1 IDLE
+2026-04-10 11:27:45.635 PrimFSM.cpp(37) FSM: HttpManager id: 0; > St: 0 ACTIVE Pr: 47362:3 CONFIG_LOAD_CONF (16)
+2026-04-10 11:27:45.635 PrimFSM.cpp(72) FSM: HttpManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.635 PrimFSM.cpp(37) FSM: CongestionMalformedMessagesMatcher id: 0; > St: 2 ACTIVE Pr: 47362:0 CONFIG_SET_IND ()
+2026-04-10 11:27:45.635 PrimFSM.cpp(72) FSM: CongestionMalformedMessagesMatcher id: 0; < St: 2 ACTIVE
+2026-04-10 11:27:45.635 PrimFSM.cpp(37) FSM: HttpManager id: 0; > St: 0 ACTIVE Pr: 47362:0 CONFIG_SET_IND ()
+2026-04-10 11:27:45.635 PrimFSM.cpp(72) FSM: HttpManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.635 PrimFSM.cpp(37) FSM: WebSocketManager id: 0; > St: 0 ACTIVE Pr: 47362:0 CONFIG_SET_IND ()
+2026-04-10 11:27:45.635 PrimFSM.cpp(72) FSM: WebSocketManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.636 PrimFSM.cpp(37) FSM: Cosmos id: 0; > St: 0 ACTIVE Pr: 47362:0 CONFIG_SET_IND ()
+2026-04-10 11:27:45.636 PrimFSM.cpp(37) FSM: DatabaseManager id: 0; > St: 3 ACTIVE Pr: 47362:0 CONFIG_SET_IND ()
+2026-04-10 11:27:45.636 PrimFSM.cpp(72) FSM: Cosmos id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.636 PrimFSM.cpp(72) FSM: DatabaseManager id: 0; < St: 3 ACTIVE
+2026-04-10 11:27:45.637 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 47362:0 CONFIG_SET_IND ()
+2026-04-10 11:27:45.638 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:45.639 Congestion.cpp(768) FSM: Congestion id: 0; > St: 0 ACTIVE Pr: 47377:13 CONG_LIMITS_MATCHER_ADD_GATE_IND ()
+2026-04-10 11:27:45.639 Congestion.cpp(768) FSM: Congestion id: 0; > St: 0 ACTIVE Pr: 47377:13 CONG_LIMITS_MATCHER_ADD_GATE_IND ()
+2026-04-10 11:27:45.639 PrimFSM.cpp(37) FSM: Cosmos id: 0; > St: 0 ACTIVE Pr: 47363:26 CMD_GET_STAT_REQ (: info.id: 17)
+2026-04-10 11:27:45.639 PrimFSM.cpp(72) FSM: Cosmos id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.641 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 47363:27 CMD_GET_STAT_RESP (: info.id: 17)
+2026-04-10 11:27:45.641 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:45.641 PrimFSM.cpp(37) FSM: StatManager id: 0; > St: 0 ACTIVE Pr: 47368:2 SET_VALUE_IND ()
+2026-04-10 11:27:45.698 PrimFSM.cpp(72) FSM: StatManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.698 PrimFSM.cpp(37) FSM: HttpManager id: 0; > St: 0 ACTIVE Pr: 3361:0 HTTP_GET_IND (CA = [Sg.HTTP.SDir.1.SCL.0,15] | RemoteAddress = 127.0.0.1:33656 | LocalAddress = 127.0.0.1:8500 | TempFilePresent = 0
+GET //config/all HTTP/1.1
+Host: 127.0.0.1:8500
+User-Agent: python-requests/2.28.2
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+[REDACTED]
+2026-04-10 11:27:45.699 PrimFSM.cpp(72) FSM: HttpManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.705 PrimFSM.cpp(37) FSM: HttpManager id: 0; > St: 0 ACTIVE Pr: 3361:1 HTTP_POST_IND (CA = [Sg.HTTP.SDir.1.SCL.0,16] | RemoteAddress = 127.0.0.1:33656 | LocalAddress = 127.0.0.1:8500 | TempFilePresent = 0
+POST //config/main/load HTTP/1.1
+Host: 127.0.0.1:8500
+User-Agent: python-requests/2.28.2
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+[REDACTED]
+Content-Type: application/json    //mime_part_header
+
+{"alg": {"mcu": [{"description": "", "group": "default", "hostport": {"host": "127.0.0.1", "port": 2040}, "subnetworks": [{"audio-channels": 20, "interface": "127.0.0.1", "network": "USER-MCU-NETWORK", "video-channels": 20}, {"audio-channels": 20, "interface": "127.0.0.1", "network": "WS-MCU-NETWORK", "video-channels": 20}, {"audio-channels": 20, "interface": "127.0.0.1", "network": "SERVICE-MCU-NETWORK", "video-channels": 20}, {"audio-channels": 20, "interface": "127.0.0.1", "network": "OPERATOR-MCU-NETWORK", "video-channels": 20}]}]}, "callDumper": {}, "congestion": {"config": {"globalProfile": {"coRps": 100, "cps": 100, "origCps": 100, "regPs": 100, "responsePs": 100, "rps": 100, "simultaneousCall": 1000, "simultaneousOrigCall": 1000, "simultaneousReg": 1000, "simultaneousSub": 10000000, "simultaneousTermCall": 1000, "termCps": 100}, "limits": {"default": {"coRps": 1000, "cps": 100, "regPs": 100, "responsePs": 1000, "rps": 1000, "simultaneousCall": 1000, "simultaneousOrigCall": 1000, "simultaneousReg": 1000, "simultaneousSub": 1000000, "simultaneousTermCall": 1000, "termCps": 100}}, "profiles": {"additional": {}, "default": {"aor": {"authBorderForPer": 100, "authPer": 0.3, "avCps": 100, "avRps": 200, "cps": 500, "failAuthAbs": 100, "malformedAbs": 100, "malformedBorderForPer": 100, "malformedPer": 0.3, "regPs": 5000, "responsePs": 1000, "rps": 1000, "simultaneousCall": 100, "simultaneousOrigCall": 100, "simultaneousReg": 100, "simultaneousSub": 1000000, "simultaneousTermCall": 100, "termCps": 500}, "gate": {"authBorderForPer": 100, "authPer": 0.5, "avCps": 500, "avRps": 1000, "cps": 1000, "failAuthAbs": 250, "malformedAbs": 250, "malformedBorderForPer": 100, "malformedPer": 0.5, "regPs": 10000, "responsePs": 1000, "rps": 100, "simultaneousCall": 3500, "simultaneousOrigCall": 3500, "simultaneousReg": 3500, "simultaneousSub": 35000000, "simultaneousTermCall": 3500, "termCps": 1000}, "ip": {"authBorderForPer": 100, "authPer": 0.5, "avCps": 500, "avRps": 1000, "cps": 1000, "failAuthAbs": 250, "malformedAbs": 250, "malformedBorderForPer": 100, "malformedPer": 0.5, "regPs": 10000, "responsePs": 1000, "rps": 100, "simultaneousCall": 3500, "simultaneousOrigCall": 3500, "simultaneousReg": 3500, "simultaneousSub": 3500000, "simultaneousTermCall": 3500, "termCps": 1000}}}}, "matchers": {"aor": [], "network": []}}, "cutter": {}, "h323": {"externalMediaNetwork": "empty", "internalMediaNetwork": "empty", "service": {"host": "127.0.0.1", "port": 1720}}, "http": {"users": [{"ha1": "3b9775665e13ee265b2a7ec758c9a8cf", "level": "admin", "name": "support"}]}, "restore": {}, "sbc": {"codecs": {}, "expire": {"common": {"max": 3600, "min": 5}}, "mediaProfiles": {"empty": {"codecs": {}, "forcedProxy": false, "ptMap": {}}, "media-profile-server": {"allowMediaInconsistency": false, "codecs": {}, "forcedProxy": true, "ptMap": {}, "videoCodecs": {}}, "media-profile-user": {"allowMediaInconsistency": false, "codecs": {}, "forcedProxy": true, "ptMap": {}, "videoCodecs": {}}}, "routing": {"operator": [], "user": [{"destination": ["service.test-service"], "name": "USER-to-SERVICE", "source": ["profile.test-userprofile"], "filter": {"type": ["call", "register", "message", "options", "subscribe"]}}]}, "services": {"test-service": {"config": {"domain": "service.asbc.net"}, "mediaNetwork": "SERVICE-MCU-NETWORK", "mediaProfile": "media-profile-server", "pinger": {"enabled": false, "period": 5}, "trunks": {"main": {"connection": "UDP", "gateId": "SERVICE-GATE", "hostport": {"host": "127.0.0.1", "port": 52721}, "strongLink": true}}}}, "storage": {}, "userProfiles": {"additional": [{"config": {"allowUnreg": false, "translateDisplayName": true}, "matchingPolicy": "DISABLED", "mediaNetwork": "USER-MCU-NETWORK", "mediaProfile": "media-profile-user", "name": "test-userprofile", "rule": {"aor": ":test-user@?"}}]}, "videoCodecs": {}}, "sip": {"TLS": {"additional": []}, "external": [{"dns": {"servers": ["127.0.0.1"]}, "gateId": "USER-GATE", "hostport": {"host": "127.0.0.1", "port": 42875}, "type": "BOTH"}], "internal": [{"dns": {"servers": ["127.0.0.1"]}, "gateId": "SERVICE-GATE", "hostport": {"host": "127.0.0.1", "port": 37659}, "type": "BOTH"}], "timer": {"T0": 3200, "T1": 200, "T2": 1000, "TB": 4000, "TF": 3200, "TH": 4000, "TJ": 12800, "TP": 600000, "noResponseTimeout": 16000}}})
+2026-04-10 11:27:45.706 PrimFSM.cpp(72) FSM: HttpManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.706 PrimFSM.cpp(37) FSM: Config id: 0; > St: 1 IDLE Pr: 47362:2 CONFIG_LOAD_REQ (18)
+2026-04-10 11:27:45.709 PrimFSM.cpp(72) FSM: Config id: 0; < St: 2 ACTIVE
+2026-04-10 11:27:45.709 PrimFSM.cpp(37) FSM: StatManager id: 0; > St: 0 ACTIVE Pr: 47368:2 SET_VALUE_IND ()
+2026-04-10 11:27:45.709 PrimFSM.cpp(72) FSM: StatManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.711 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 47362:5 CONFIG_APPLY_REQ ()
+2026-04-10 11:27:45.711 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:45.712 PrimFSM.cpp(37) FSM: Config id: 0; > St: 2 ACTIVE Pr: 47362:6 CONFIG_APPLY_CONF ()
+2026-04-10 11:27:45.713 PrimFSM.cpp(72) FSM: Config id: 0; < St: 1 IDLE
+2026-04-10 11:27:45.713 PrimFSM.cpp(37) FSM: HttpManager id: 0; > St: 0 ACTIVE Pr: 47362:3 CONFIG_LOAD_CONF (18)
+2026-04-10 11:27:45.713 PrimFSM.cpp(72) FSM: HttpManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.713 PrimFSM.cpp(37) FSM: CongestionMalformedMessagesMatcher id: 0; > St: 2 ACTIVE Pr: 47362:0 CONFIG_SET_IND ()
+2026-04-10 11:27:45.713 PrimFSM.cpp(72) FSM: CongestionMalformedMessagesMatcher id: 0; < St: 2 ACTIVE
+2026-04-10 11:27:45.713 PrimFSM.cpp(37) FSM: HttpManager id: 0; > St: 0 ACTIVE Pr: 47362:0 CONFIG_SET_IND ()
+2026-04-10 11:27:45.713 PrimFSM.cpp(72) FSM: HttpManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.713 PrimFSM.cpp(37) FSM: WebSocketManager id: 0; > St: 0 ACTIVE Pr: 47362:0 CONFIG_SET_IND ()
+2026-04-10 11:27:45.713 PrimFSM.cpp(72) FSM: WebSocketManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.714 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 47362:0 CONFIG_SET_IND ()
+2026-04-10 11:27:45.715 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:45.715 PrimFSM.cpp(37) FSM: DatabaseManager id: 0; > St: 3 ACTIVE Pr: 47362:0 CONFIG_SET_IND ()
+2026-04-10 11:27:45.716 PrimFSM.cpp(37) FSM: Cosmos id: 0; > St: 0 ACTIVE Pr: 47362:0 CONFIG_SET_IND ()
+2026-04-10 11:27:45.716 PrimFSM.cpp(72) FSM: DatabaseManager id: 0; < St: 3 ACTIVE
+2026-04-10 11:27:45.716 PrimFSM.cpp(72) FSM: Cosmos id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.716 PrimFSM.cpp(37) FSM: Cosmos id: 0; > St: 0 ACTIVE Pr: 47363:26 CMD_GET_STAT_REQ (: info.id: 19)
+2026-04-10 11:27:45.716 PrimFSM.cpp(72) FSM: Cosmos id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.716 PrimFSM.cpp(37) FSM: SurrogateRegisterManager.0 id: 0; > St: 0 ACTIVE Pr: 47381:0 SURROGATE_REGISTER_LOAD_CONFIG_IND ()
+2026-04-10 11:27:45.716 PrimFSM.cpp(72) FSM: SurrogateRegisterManager.0 id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.718 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 47363:27 CMD_GET_STAT_RESP (: info.id: 19)
+2026-04-10 11:27:45.718 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:45.718 Congestion.cpp(768) FSM: Congestion id: 0; > St: 0 ACTIVE Pr: 47377:14 CONG_LIMITS_MATCHER_ADD_COMPONENT_IND ()
+2026-04-10 11:27:45.718 Congestion.cpp(768) FSM: Congestion id: 0; > St: 0 ACTIVE Pr: 47377:15 CONG_LIMITS_MATCHER_ADD_SUB_COMPONENT_IND ()
+2026-04-10 11:27:45.719 PrimFSM.cpp(37) FSM: StatManager id: 0; > St: 0 ACTIVE Pr: 47368:2 SET_VALUE_IND ()
+2026-04-10 11:27:45.736 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 38405:6 SIP_TR_REGISTER_IND ()
+2026-04-10 11:27:45.736 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:45.738 PrimFSM.cpp(37) FSM: RegisterLogic.0 id: 0; > St: 0 IDLE Pr: 47361:10 INITIALIZE_REGISTER_LOGIC_IND (d869f53200000000)
+2026-04-10 11:27:45.738 PrimFSM.cpp(72) FSM: RegisterLogic.0.d869f53200000000 id: 0; < St: 1 INIT_WAIT_DETERMINE_ENTITY_CONF
+2026-04-10 11:27:45.777 PrimFSM.cpp(72) FSM: StatManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.777 PrimFSM.cpp(37) FSM: DnsRouter id: 0; > St: 0 ACTIVE Pr: 47364:15 STORAGE_DETERMINE_ENTITY_REQ (d869f53200000000)
+2026-04-10 11:27:45.777 PrimFSM.cpp(72) FSM: DnsRouter id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.777 PrimFSM.cpp(37) FSM: Cosmos id: 0; > St: 0 ACTIVE Pr: 47364:15 STORAGE_DETERMINE_ENTITY_REQ (d869f53200000000)
+2026-04-10 11:27:45.777 PrimFSM.cpp(72) FSM: Cosmos id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.778 PrimFSM.cpp(37) FSM: RegisterLogic.0.d869f53200000000 id: 0; > St: 1 INIT_WAIT_DETERMINE_ENTITY_CONF Pr: 47364:16 STORAGE_DETERMINE_ENTITY_CONF (d869f53200000000)
+2026-04-10 11:27:45.778 PrimFSM.cpp(72) FSM: RegisterLogic.0.d869f53200000000 id: 0; < St: 2 ROUTING_WAIT_ANSWER_FROM_STORAGE
+2026-04-10 11:27:45.778 PrimFSM.cpp(37) FSM: RegisterLogic.0.d869f53200000000 id: 0; > St: 2 ROUTING_WAIT_ANSWER_FROM_STORAGE Pr: 38405:6 SIP_TR_REGISTER_IND ()
+2026-04-10 11:27:45.778 PrimFSM.cpp(72) FSM: RegisterLogic.0.d869f53200000000 id: 0; < St: 2 ROUTING_WAIT_ANSWER_FROM_STORAGE
+2026-04-10 11:27:45.780 PrimFSM.cpp(37) FSM: DnsRouter id: 0; > St: 0 ACTIVE Pr: 47387:0 STORAGE_ORIG_ROUTING_REQ (d869f53200000000)
+2026-04-10 11:27:45.780 PrimFSM.cpp(72) FSM: DnsRouter id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.780 PrimFSM.cpp(37) FSM: Cosmos id: 0; > St: 0 ACTIVE Pr: 47387:0 STORAGE_ORIG_ROUTING_REQ (d869f53200000000)
+2026-04-10 11:27:45.781 PrimFSM.cpp(72) FSM: Cosmos id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.783 PrimFSM.cpp(37) FSM: DnsRouter id: 0; > St: 0 ACTIVE Pr: 47364:13 STORAGE_CONF (d869f53200000000)
+2026-04-10 11:27:45.783 PrimFSM.cpp(72) FSM: DnsRouter id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.784 PrimFSM.cpp(37) FSM: RegisterLogic.0.d869f53200000000 id: 0; > St: 2 ROUTING_WAIT_ANSWER_FROM_STORAGE Pr: 47364:13 STORAGE_CONF (d869f53200000000)
+2026-04-10 11:27:45.785 PrimFSM.cpp(72) FSM: RegisterLogic.0.d869f53200000000 id: 0; < St: 3 ROUTING_WAIT_ANSWER_FROM_CONGESTION
+2026-04-10 11:27:45.785 PrimFSM.cpp(37) FSM: RegisterLogic.0.d869f53200000000 id: 0; > St: 3 ROUTING_WAIT_ANSWER_FROM_CONGESTION Pr: 38405:6 SIP_TR_REGISTER_IND ()
+2026-04-10 11:27:45.785 PrimFSM.cpp(72) FSM: RegisterLogic.0.d869f53200000000 id: 0; < St: 3 ROUTING_WAIT_ANSWER_FROM_CONGESTION
+2026-04-10 11:27:45.786 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 47366:29 DATABASE_ADD_CONTACT_IND (d869f53200000000)
+2026-04-10 11:27:45.786 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:45.786 Congestion.cpp(768) FSM: Congestion id: 0; > St: 0 ACTIVE Pr: 47377:4 CONG_START_REG_IND (d869f53200000000)
+2026-04-10 11:27:45.786 Congestion.cpp(768) FSM: Congestion id: 0; > St: 0 ACTIVE Pr: 47379:3 CONG_CAN_REG_REQ (d869f53200000000)
+2026-04-10 11:27:45.786 PrimFSM.cpp(37) FSM: HttpManager id: 0; > St: 0 ACTIVE Pr: 47363:25 CMD_TIMEOUT_IND ()
+2026-04-10 11:27:45.786 PrimFSM.cpp(72) FSM: HttpManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.788 PrimFSM.cpp(37) FSM: RegisterLogic.0.d869f53200000000 id: 0; > St: 3 ROUTING_WAIT_ANSWER_FROM_CONGESTION Pr: 47379:4 CONG_CAN_REG_CONF (d869f53200000000)
+2026-04-10 11:27:45.788 PrimFSM.cpp(72) FSM: RegisterLogic.0.d869f53200000000 id: 0; < St: 6 ACTIVE_WAIT_REGISTER_REQ
+2026-04-10 11:27:45.788 PrimFSM.cpp(37) FSM: RegisterLogic.0.d869f53200000000 id: 0; > St: 6 ACTIVE_WAIT_REGISTER_REQ Pr: 38405:6 SIP_TR_REGISTER_IND ()
+2026-04-10 11:27:45.788 PrimFSM.cpp(72) FSM: RegisterLogic.0.d869f53200000000 id: 0; < St: 7 ACTIVE_WAIT_REGISTER_RESP
+2026-04-10 11:27:45.859 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 38407:1 SIP_TR_SUCCESS_CONF ()
+2026-04-10 11:27:45.859 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:45.862 PrimFSM.cpp(37) FSM: RegisterLogic.0.d869f53200000000 id: 0; > St: 7 ACTIVE_WAIT_REGISTER_RESP Pr: 38407:1 SIP_TR_SUCCESS_CONF ()
+2026-04-10 11:27:45.862 PrimFSM.cpp(72) FSM: RegisterLogic.0.d869f53200000000 id: 0; < St: 5 ACTIVE
+2026-04-10 11:27:45.863 PrimFSM.cpp(37) FSM: DatabaseManager id: 0; > St: 3 ACTIVE Pr: 47366:24 DATABASE_ADD_REGISTER_IND (d869f53200000000)
+2026-04-10 11:27:45.863 PrimFSM.cpp(72) FSM: DatabaseManager id: 0; < St: 3 ACTIVE
+2026-04-10 11:27:45.863 PrimFSM.cpp(37) FSM: Cosmos id: 0; > St: 0 ACTIVE Pr: 47364:18 STORAGE_REG_INTERNAL_AOR ()
+2026-04-10 11:27:45.863 PrimFSM.cpp(72) FSM: Cosmos id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.940 PrimFSM.cpp(37) FSM: HttpManager id: 0; > St: 0 ACTIVE Pr: 3361:0 HTTP_GET_IND (CA = [Sg.HTTP.SDir.1.SCL.0,17] | RemoteAddress = 127.0.0.1:33656 | LocalAddress = 127.0.0.1:8500 | TempFilePresent = 0
+GET //registers/filter?aor=sip%3Atest-user%40users.asbc.net HTTP/1.1
+Host: 127.0.0.1:8500
+User-Agent: python-requests/2.28.2
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+[REDACTED]
+2026-04-10 11:27:45.940 PrimFSM.cpp(72) FSM: HttpManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.942 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 47363:6 CMD_GET_SESSIONS_BY_AOR_REQ (: info.id: 20)
+2026-04-10 11:27:45.942 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:45.945 PrimFSM.cpp(37) FSM: RegisterLogic.0.d869f53200000000 id: 0; > St: 5 ACTIVE Pr: 47363:26 CMD_GET_STAT_REQ (: info.id: 22)
+2026-04-10 11:27:45.945 PrimFSM.cpp(72) FSM: RegisterLogic.0.d869f53200000000 id: 0; < St: 5 ACTIVE
+2026-04-10 11:27:45.948 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 47363:27 CMD_GET_STAT_RESP (: info.id: 22)
+2026-04-10 11:27:45.948 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:45.948 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 47363:31 CMD_SUCCESS_RESP (: info.id: 21)
+2026-04-10 11:27:45.948 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:45.950 PrimFSM.cpp(37) FSM: HttpManager id: 0; > St: 0 ACTIVE Pr: 47363:31 CMD_SUCCESS_RESP (: info.id: 20)
+2026-04-10 11:27:45.950 PrimFSM.cpp(72) FSM: HttpManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.962 PrimFSM.cpp(37) FSM: HttpManager id: 0; > St: 0 ACTIVE Pr: 3361:0 HTTP_GET_IND (CA = [Sg.HTTP.SDir.1.SCL.0,18] | RemoteAddress = 127.0.0.1:33656 | LocalAddress = 127.0.0.1:8500 | TempFilePresent = 0
+GET //users/filter?aor_regex=test%5C-user HTTP/1.1
+Host: 127.0.0.1:8500
+User-Agent: python-requests/2.28.2
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+[REDACTED]
+2026-04-10 11:27:45.963 PrimFSM.cpp(72) FSM: HttpManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.963 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 47363:10 CMD_GET_USERS_BY_AOR_REGEX_REQ (: info.id: 23)
+2026-04-10 11:27:45.963 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:45.965 PrimFSM.cpp(37) FSM: Cosmos id: 0; > St: 0 ACTIVE Pr: 47363:10 CMD_GET_USERS_BY_AOR_REGEX_REQ (: info.id: 23)
+2026-04-10 11:27:45.965 PrimFSM.cpp(72) FSM: Cosmos id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.966 PrimFSM.cpp(37) FSM: HttpManager id: 0; > St: 0 ACTIVE Pr: 47363:31 CMD_SUCCESS_RESP (: info.id: 23)
+2026-04-10 11:27:45.966 PrimFSM.cpp(72) FSM: HttpManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.979 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 38405:11 SIP_TR_SUBSCRIBE_IND (Event: protei-test-event Expires: 120)
+2026-04-10 11:27:45.979 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:45.982 PrimFSM.cpp(37) FSM: SubscribeLogic.0 id: 0; > St: 0 IDLE Pr: 47361:18 INITIALIZE_SUBSCRIBE_LOGIC_IND (61bf91b400000002)
+2026-04-10 11:27:45.982 PrimFSM.cpp(72) FSM: SubscribeLogic.0.61bf91b400000002 id: 0; < St: 1 INIT_WAIT_DETERMINE_ENTITY_CONF
+2026-04-10 11:27:45.988 PrimFSM.cpp(37) FSM: SubscribeLogic.0.61bf91b400000002 id: 0; > St: 1 INIT_WAIT_DETERMINE_ENTITY_CONF Pr: 47364:16 STORAGE_DETERMINE_ENTITY_CONF (61bf91b400000002)
+2026-04-10 11:27:45.988 PrimFSM.cpp(72) FSM: SubscribeLogic.0.61bf91b400000002 id: 0; < St: 2 INIT_WAIT_STORAGE_CONF
+2026-04-10 11:27:45.988 PrimFSM.cpp(37) FSM: SubscribeLogic.0.61bf91b400000002 id: 0; > St: 2 INIT_WAIT_STORAGE_CONF Pr: 38405:11 SIP_TR_SUBSCRIBE_IND (Event: protei-test-event Expires: 120)
+2026-04-10 11:27:45.988 PrimFSM.cpp(72) FSM: SubscribeLogic.0.61bf91b400000002 id: 0; < St: 2 INIT_WAIT_STORAGE_CONF
+2026-04-10 11:27:45.991 PrimFSM.cpp(37) FSM: DnsRouter id: 0; > St: 0 ACTIVE Pr: 47387:1 STORAGE_TERM_ROUTING_REQ (61bf91b400000002)
+2026-04-10 11:27:45.991 PrimFSM.cpp(72) FSM: DnsRouter id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.992 PrimFSM.cpp(37) FSM: Cosmos id: 0; > St: 0 ACTIVE Pr: 47387:1 STORAGE_TERM_ROUTING_REQ (61bf91b400000002)
+2026-04-10 11:27:45.993 PrimFSM.cpp(72) FSM: Cosmos id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.994 PrimFSM.cpp(37) FSM: DnsRouter id: 0; > St: 0 ACTIVE Pr: 47364:13 STORAGE_CONF (61bf91b400000002)
+2026-04-10 11:27:45.994 PrimFSM.cpp(72) FSM: DnsRouter id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:45.994 PrimFSM.cpp(37) FSM: SubscribeLogic.0.61bf91b400000002 id: 0; > St: 2 INIT_WAIT_STORAGE_CONF Pr: 47364:13 STORAGE_CONF (61bf91b400000002)
+2026-04-10 11:27:45.995 PrimFSM.cpp(72) FSM: SubscribeLogic.0.61bf91b400000002 id: 0; < St: 3 INIT_WAIT_CONGESTION_CONF
+2026-04-10 11:27:45.995 PrimFSM.cpp(37) FSM: SubscribeLogic.0.61bf91b400000002 id: 0; > St: 3 INIT_WAIT_CONGESTION_CONF Pr: 38405:11 SIP_TR_SUBSCRIBE_IND (Event: protei-test-event Expires: 120)
+2026-04-10 11:27:45.995 PrimFSM.cpp(72) FSM: SubscribeLogic.0.61bf91b400000002 id: 0; < St: 3 INIT_WAIT_CONGESTION_CONF
+2026-04-10 11:27:45.997 Congestion.cpp(768) FSM: Congestion id: 0; > St: 0 ACTIVE Pr: 47377:7 CONG_START_SUBSCRIBE_IND (61bf91b400000002)
+2026-04-10 11:27:45.997 Congestion.cpp(768) FSM: Congestion id: 0; > St: 0 ACTIVE Pr: 47379:9 CONG_CAN_SUB_REQ (61bf91b400000002)
+2026-04-10 11:27:45.998 PrimFSM.cpp(37) FSM: SubscribeLogic.0.61bf91b400000002 id: 0; > St: 3 INIT_WAIT_CONGESTION_CONF Pr: 47379:10 CONG_CAN_SUB_CONF (61bf91b400000002)
+2026-04-10 11:27:45.998 PrimFSM.cpp(72) FSM: SubscribeLogic.0.61bf91b400000002 id: 0; < St: 5 PRE_ANSWER
+2026-04-10 11:27:45.998 PrimFSM.cpp(37) FSM: SubscribeLogic.0.61bf91b400000002 id: 0; > St: 5 PRE_ANSWER Pr: 38405:11 SIP_TR_SUBSCRIBE_IND (Event: protei-test-event Expires: 120)
+2026-04-10 11:27:45.998 PrimFSM.cpp(72) FSM: SubscribeLogic.0.61bf91b400000002 id: 0; < St: 6 PRE_ANSWER_WAIT_SUBSCRIBE_RESP
+2026-04-10 11:27:46.052 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 38407:1 SIP_TR_SUCCESS_CONF ()
+2026-04-10 11:27:46.053 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:46.053 PrimFSM.cpp(37) FSM: SubscribeLogic.0.61bf91b400000002 id: 0; > St: 6 PRE_ANSWER_WAIT_SUBSCRIBE_RESP Pr: 38407:1 SIP_TR_SUCCESS_CONF ()
+2026-04-10 11:27:46.053 PrimFSM.cpp(72) FSM: SubscribeLogic.0.61bf91b400000002 id: 0; < St: 5 PRE_ANSWER
+2026-04-10 11:27:46.056 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 47361:19 BIND_SUBSCRIBE_LOGIC_IND (61bf91b400000002)
+2026-04-10 11:27:46.056 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:46.102 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 38405:7 SIP_TR_NOTIFY_IND (Subscription-State: pending)
+2026-04-10 11:27:46.102 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:46.102 PrimFSM.cpp(37) FSM: SubscribeLogic.0.61bf91b400000002 id: 0; > St: 5 PRE_ANSWER Pr: 38405:7 SIP_TR_NOTIFY_IND (Subscription-State: pending)
+2026-04-10 11:27:46.102 PrimFSM.cpp(72) FSM: SubscribeLogic.0.61bf91b400000002 id: 0; < St: 7 PRE_ANSWER_WAIT_NOTIFY_RESP
+2026-04-10 11:27:46.160 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 38407:1 SIP_TR_SUCCESS_CONF ()
+2026-04-10 11:27:46.160 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:46.161 PrimFSM.cpp(37) FSM: SubscribeLogic.0.61bf91b400000002 id: 0; > St: 7 PRE_ANSWER_WAIT_NOTIFY_RESP Pr: 38407:1 SIP_TR_SUCCESS_CONF ()
+2026-04-10 11:27:46.161 PrimFSM.cpp(72) FSM: SubscribeLogic.0.61bf91b400000002 id: 0; < St: 5 PRE_ANSWER
+2026-04-10 11:27:46.215 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 38405:7 SIP_TR_NOTIFY_IND (Subscription-State: terminated;reason=rejected)
+2026-04-10 11:27:46.215 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:46.216 PrimFSM.cpp(37) FSM: SubscribeLogic.0.61bf91b400000002 id: 0; > St: 5 PRE_ANSWER Pr: 38405:7 SIP_TR_NOTIFY_IND (Subscription-State: terminated;reason=rejected)
+2026-04-10 11:27:46.216 PrimFSM.cpp(72) FSM: SubscribeLogic.0.61bf91b400000002 id: 0; < St: 7 PRE_ANSWER_WAIT_NOTIFY_RESP
+2026-04-10 11:27:46.270 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 38407:1 SIP_TR_SUCCESS_CONF ()
+2026-04-10 11:27:46.270 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:46.271 PrimFSM.cpp(37) FSM: SubscribeLogic.0.61bf91b400000002 id: 0; > St: 7 PRE_ANSWER_WAIT_NOTIFY_RESP Pr: 38407:1 SIP_TR_SUCCESS_CONF ()
+2026-04-10 11:27:46.272 PrimFSM.cpp(72) FSM: SubscribeLogic.0.61bf91b400000002 id: 0; < St: 19 DESTROYING_WAIT_FREE_SUBSCRIBE_LOGIC_CONF
+2026-04-10 11:27:46.273 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 47361:23 FREE_SUBSCRIBE_LOGIC_REQ (61bf91b400000002)
+2026-04-10 11:27:46.273 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:46.276 Congestion.cpp(768) FSM: Congestion id: 0; > St: 0 ACTIVE Pr: 47377:9 CONG_END_SUBSCRIBE_IND (61bf91b400000002)
+2026-04-10 11:27:46.276 Congestion.cpp(768) FSM: Congestion id: 0; > St: 0 ACTIVE Pr: 47377:0 CONG_ADD_TR_IND (61bf91b400000002)
+2026-04-10 11:27:46.276 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 47361:26 FREE_SUBSCRIBE_LOGIC_IND (61bf91b400000002)
+2026-04-10 11:27:46.276 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:46.276 Congestion.cpp(768) FSM: Congestion id: 0; > St: 0 ACTIVE Pr: 47377:0 CONG_ADD_TR_IND (61bf91b400000002)
+2026-04-10 11:27:46.285 PrimFSM.cpp(37) FSM: ApManager id: 0; > St: 0 ACTIVE Pr: 47384:0 AP_MANAGER_UPDATE_VALUES_TIMER_IND ()
+2026-04-10 11:27:46.285 PrimFSM.cpp(72) FSM: ApManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:46.285 PrimFSM.cpp(37) FSM: StatManager id: 0; > St: 0 ACTIVE Pr: 47368:6 GET_ALL_VALUE_REQ ()
+2026-04-10 11:27:46.285 PrimFSM.cpp(72) FSM: StatManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:46.285 PrimFSM.cpp(37) FSM: ApManager id: 0; > St: 0 ACTIVE Pr: 47368:7 GET_ALL_VALUE_RESP ()
+2026-04-10 11:27:46.290 PrimFSM.cpp(72) FSM: ApManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:46.304 PrimFSM.cpp(37) FSM: AlgProxy id: 0; > St: 0 ACTIVE Pr: 47385:5 ALG_PROXY_MCU_STAT_IND ()
+2026-04-10 11:27:46.304 PrimFSM.cpp(72) FSM: AlgProxy id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:46.304 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 47385:6 ALG_PROXY_MCU_STAT_RESP ()
+2026-04-10 11:27:46.304 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:46.316 PrimFSM.cpp(37) FSM: HttpManager id: 0; > St: 0 ACTIVE Pr: 3361:1 HTTP_POST_IND (CA = [Sg.HTTP.SDir.1.SCL.0,19] | RemoteAddress = 127.0.0.1:33656 | LocalAddress = 127.0.0.1:8500 | TempFilePresent = 0
+POST //users/sip:*******@users.asbc.net/unreg HTTP/1.1
+Host: 127.0.0.1:8500
+User-Agent: python-requests/2.28.2
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+[REDACTED]
+2026-04-10 11:27:46.317 PrimFSM.cpp(72) FSM: HttpManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:46.319 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 47363:3 CMD_UNREGISTER_USER_BY_HASH_REQ (: info.id: 24)
+2026-04-10 11:27:46.319 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:46.320 PrimFSM.cpp(37) FSM: Cosmos id: 0; > St: 0 ACTIVE Pr: 47363:3 CMD_UNREGISTER_USER_BY_HASH_REQ (: info.id: 24)
+2026-04-10 11:27:46.320 PrimFSM.cpp(72) FSM: Cosmos id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:46.324 PrimFSM.cpp(37) FSM: HttpManager id: 0; > St: 0 ACTIVE Pr: 47363:31 CMD_SUCCESS_RESP (: info.id: 24)
+2026-04-10 11:27:46.324 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 47366:27 DATABASE_UNREGISTER_CONTACTS_IND ()
+2026-04-10 11:27:46.324 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:46.324 PrimFSM.cpp(72) FSM: HttpManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:46.324 PrimFSM.cpp(37) FSM: RegisterLogic.0.d869f53200000000 id: 0; > St: 5 ACTIVE Pr: 47366:28 DATABASE_UNREGISTER_IND ()
+2026-04-10 11:27:46.325 PrimFSM.cpp(72) FSM: RegisterLogic.0.d869f53200000000 id: 0; < St: 11 DESTROYING_WAIT_FREE_REGISTER_LOGIC_CONF
+2026-04-10 11:27:46.327 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 47361:14 FREE_REGISTER_LOGIC_REQ (d869f53200000000)
+2026-04-10 11:27:46.327 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:46.330 Congestion.cpp(768) FSM: Congestion id: 0; > St: 0 ACTIVE Pr: 47377:6 CONG_END_REG_IND (d869f53200000000)
+2026-04-10 11:27:46.330 Congestion.cpp(768) FSM: Congestion id: 0; > St: 0 ACTIVE Pr: 47377:0 CONG_ADD_TR_IND (d869f53200000000)
+2026-04-10 11:27:46.330 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 47366:30 DATABASE_REMOVE_CONTACT_IND (d869f53200000000)
+2026-04-10 11:27:46.330 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:46.330 Congestion.cpp(768) FSM: Congestion id: 0; > St: 0 ACTIVE Pr: 47377:0 CONG_ADD_TR_IND (d869f53200000000)
+2026-04-10 11:27:46.330 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 47361:17 FREE_REGISTER_LOGIC_IND (d869f53200000000)
+2026-04-10 11:27:46.330 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:46.331 PrimFSM.cpp(37) FSM: DatabaseManager id: 0; > St: 3 ACTIVE Pr: 47366:25 DATABASE_REMOVE_REGISTER_IND (d869f53200000000)
+2026-04-10 11:27:46.331 PrimFSM.cpp(72) FSM: DatabaseManager id: 0; < St: 3 ACTIVE
+2026-04-10 11:27:47.286 PrimFSM.cpp(37) FSM: HttpManager id: 0; > St: 0 ACTIVE Pr: 47363:25 CMD_TIMEOUT_IND ()
+2026-04-10 11:27:47.286 PrimFSM.cpp(72) FSM: HttpManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:47.286 PrimFSM.cpp(37) FSM: ApManager id: 0; > St: 0 ACTIVE Pr: 47384:0 AP_MANAGER_UPDATE_VALUES_TIMER_IND ()
+2026-04-10 11:27:47.286 PrimFSM.cpp(72) FSM: ApManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:47.286 PrimFSM.cpp(37) FSM: StatManager id: 0; > St: 0 ACTIVE Pr: 47368:6 GET_ALL_VALUE_REQ ()
+2026-04-10 11:27:47.286 PrimFSM.cpp(72) FSM: StatManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:47.286 PrimFSM.cpp(37) FSM: AlgProxy id: 0; > St: 0 ACTIVE Pr: 47373:0 STAT_ALG_GET_GLOBAL_REQ ()
+2026-04-10 11:27:47.286 PrimFSM.cpp(72) FSM: AlgProxy id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:47.286 PrimFSM.cpp(37) FSM: StatManager id: 0; > St: 0 ACTIVE Pr: 47373:1 STAT_ALG_GET_GLOBAL_RESP ()
+2026-04-10 11:27:47.286 PrimFSM.cpp(72) FSM: StatManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:47.289 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 47372:2 STAT_CONGESTION_GET_DENIED_COUNTERS_REQ ()
+2026-04-10 11:27:47.289 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:47.289 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 47372:0 STAT_CONGESTION_GET_GLOBAL_REQ ()
+2026-04-10 11:27:47.289 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:47.292 Congestion.cpp(768) FSM: Congestion id: 0; > St: 0 ACTIVE Pr: 47378:0 CONG_STAT_GET_GLOBAL_COUNTERS_REQ ()
+2026-04-10 11:27:47.292 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 47378:3 CONG_STAT_GET_DENIED_COUNTERS_RESP ()
+2026-04-10 11:27:47.292 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:47.292 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 47378:1 CONG_STAT_GET_GLOBAL_COUNTERS_RESP ()
+2026-04-10 11:27:47.292 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:47.292 PrimFSM.cpp(37) FSM: StatManager id: 0; > St: 0 ACTIVE Pr: 47372:3 STAT_CONGESTION_GET_DENIED_COUNTERS_RESP ()
+2026-04-10 11:27:47.292 PrimFSM.cpp(72) FSM: StatManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:47.292 PrimFSM.cpp(37) FSM: StatManager id: 0; > St: 0 ACTIVE Pr: 47372:1 STAT_CONGESTION_GET_GLOBAL_RESP ()
+2026-04-10 11:27:47.293 PrimFSM.cpp(72) FSM: StatManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:47.293 PrimFSM.cpp(37) FSM: ApManager id: 0; > St: 0 ACTIVE Pr: 47368:7 GET_ALL_VALUE_RESP ()
+2026-04-10 11:27:47.297 PrimFSM.cpp(72) FSM: ApManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:47.305 PrimFSM.cpp(37) FSM: AlgProxy id: 0; > St: 0 ACTIVE Pr: 47385:5 ALG_PROXY_MCU_STAT_IND ()
+2026-04-10 11:27:47.305 PrimFSM.cpp(72) FSM: AlgProxy id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:47.307 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 47385:6 ALG_PROXY_MCU_STAT_RESP ()
+2026-04-10 11:27:47.307 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:48.284 PrimFSM.cpp(37) FSM: ApManager id: 0; > St: 0 ACTIVE Pr: 47384:0 AP_MANAGER_UPDATE_VALUES_TIMER_IND ()
+2026-04-10 11:27:48.284 PrimFSM.cpp(72) FSM: ApManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:48.284 PrimFSM.cpp(37) FSM: StatManager id: 0; > St: 0 ACTIVE Pr: 47368:6 GET_ALL_VALUE_REQ ()
+2026-04-10 11:27:48.285 PrimFSM.cpp(72) FSM: StatManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:48.285 PrimFSM.cpp(37) FSM: ApManager id: 0; > St: 0 ACTIVE Pr: 47368:7 GET_ALL_VALUE_RESP ()
+2026-04-10 11:27:48.293 PrimFSM.cpp(72) FSM: ApManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:48.304 PrimFSM.cpp(37) FSM: AlgProxy id: 0; > St: 0 ACTIVE Pr: 47385:5 ALG_PROXY_MCU_STAT_IND ()
+2026-04-10 11:27:48.304 PrimFSM.cpp(72) FSM: AlgProxy id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:48.305 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 47385:6 ALG_PROXY_MCU_STAT_RESP ()
+2026-04-10 11:27:48.305 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:48.786 PrimFSM.cpp(37) FSM: HttpManager id: 0; > St: 0 ACTIVE Pr: 47363:25 CMD_TIMEOUT_IND ()
+2026-04-10 11:27:48.786 PrimFSM.cpp(72) FSM: HttpManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:49.287 PrimFSM.cpp(37) FSM: ApManager id: 0; > St: 0 ACTIVE Pr: 47384:0 AP_MANAGER_UPDATE_VALUES_TIMER_IND ()
+2026-04-10 11:27:49.287 PrimFSM.cpp(72) FSM: ApManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:49.287 PrimFSM.cpp(37) FSM: StatManager id: 0; > St: 0 ACTIVE Pr: 47368:6 GET_ALL_VALUE_REQ ()
+2026-04-10 11:27:49.287 PrimFSM.cpp(72) FSM: StatManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:49.287 PrimFSM.cpp(37) FSM: AlgProxy id: 0; > St: 0 ACTIVE Pr: 47373:0 STAT_ALG_GET_GLOBAL_REQ ()
+2026-04-10 11:27:49.287 PrimFSM.cpp(72) FSM: AlgProxy id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:49.287 PrimFSM.cpp(37) FSM: StatManager id: 0; > St: 0 ACTIVE Pr: 47373:1 STAT_ALG_GET_GLOBAL_RESP ()
+2026-04-10 11:27:49.287 PrimFSM.cpp(72) FSM: StatManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:49.289 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 47372:2 STAT_CONGESTION_GET_DENIED_COUNTERS_REQ ()
+2026-04-10 11:27:49.289 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:49.289 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 47372:0 STAT_CONGESTION_GET_GLOBAL_REQ ()
+2026-04-10 11:27:49.289 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:49.292 Congestion.cpp(768) FSM: Congestion id: 0; > St: 0 ACTIVE Pr: 47378:0 CONG_STAT_GET_GLOBAL_COUNTERS_REQ ()
+2026-04-10 11:27:49.292 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 47378:3 CONG_STAT_GET_DENIED_COUNTERS_RESP ()
+2026-04-10 11:27:49.292 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:49.292 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 47378:1 CONG_STAT_GET_GLOBAL_COUNTERS_RESP ()
+2026-04-10 11:27:49.292 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+2026-04-10 11:27:49.294 PrimFSM.cpp(37) FSM: StatManager id: 0; > St: 0 ACTIVE Pr: 47372:3 STAT_CONGESTION_GET_DENIED_COUNTERS_RESP ()
+2026-04-10 11:27:49.294 PrimFSM.cpp(72) FSM: StatManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:49.294 PrimFSM.cpp(37) FSM: StatManager id: 0; > St: 0 ACTIVE Pr: 47372:1 STAT_CONGESTION_GET_GLOBAL_RESP ()
+2026-04-10 11:27:49.298 PrimFSM.cpp(72) FSM: StatManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:49.298 PrimFSM.cpp(37) FSM: ApManager id: 0; > St: 0 ACTIVE Pr: 47368:7 GET_ALL_VALUE_RESP ()
+2026-04-10 11:27:49.307 PrimFSM.cpp(72) FSM: ApManager id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:49.309 PrimFSM.cpp(37) FSM: AlgProxy id: 0; > St: 0 ACTIVE Pr: 47385:5 ALG_PROXY_MCU_STAT_IND ()
+2026-04-10 11:27:49.309 PrimFSM.cpp(72) FSM: AlgProxy id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:49.309 PrimFSM.cpp(37) FSM: Sg.SIP.InterfaceStatistics id: 0; > St: 0 ACTIVE Pr: 38472:5 SIP_STAT_TIME_TO_SEND ()
+2026-04-10 11:27:49.309 PrimFSM.cpp(37) FSM: MoL id: 0; > St: 1 ACTIVE Pr: 47385:6 ALG_PROXY_MCU_STAT_RESP ()
+2026-04-10 11:27:49.309 PrimFSM.cpp(72) FSM: Sg.SIP.InterfaceStatistics id: 0; < St: 0 ACTIVE
+2026-04-10 11:27:49.309 PrimFSM.cpp(72) FSM: MoL id: 0; < St: 1 ACTIVE
+
+
