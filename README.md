@@ -9,7 +9,7 @@ CSV-отчёт.
 ```bash
 # Release (-O3 -static)
 cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
-cmake --build build -j
+cmake --build build -j 
 
 # Debug (ASan + UBSan + LSan, -Wall -Wextra)
 cmake -S . -B build-debug -DCMAKE_BUILD_TYPE=Debug
