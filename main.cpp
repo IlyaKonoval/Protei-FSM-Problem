@@ -1,8 +1,3 @@
-/*
- * @license
- * (C) PROTEI protei.ru
- */
-
 #include <algorithm>
 #include <cerrno>
 #include <charconv>
@@ -41,10 +36,9 @@ struct FsmKeyHash {
 };
 
 struct FsmState {
-  string last_ts;
+  string last_state_change_ts;
   string state;
   string last_event;
-  string pending_event;
 };
 
 enum class LineKind { Input, Transition, Other };
@@ -67,30 +61,26 @@ string_view trim(string_view s) {
   return s.substr(a, b - a);
 }
 
-// Parse a single log line. Returns false if it isn't a recognized FSM line.
-bool parse_line(string_view line, Parsed& out) {
-  if (line.size() < kTsLen + 10) return false;
+bool has_ts_prefix(string_view line) {
+  if (line.size() < kTsLen) return false;
+  return line[4] == '-' && line[7] == '-' && line[10] == ' ' &&
+         line[13] == ':' && line[16] == ':' && line[19] == '.';
+}
 
-  // Require "YYYY-MM-DD HH:MM:SS.mmm" at start.
-  if (line[4] != '-' || line[7] != '-' || line[10] != ' ' ||
-      line[13] != ':' || line[16] != ':' || line[19] != '.') {
-    return false;
-  }
+bool parse_line(string_view line, Parsed& out) {
+  if (!has_ts_prefix(line) || line.size() < kTsLen + 10) return false;
   out.ts = line.substr(0, kTsLen);
 
-  // Find "FSM:" anchor.
   size_t fsm_pos = line.find("FSM:", kTsLen);
   if (fsm_pos == string_view::npos) return false;
   size_t p = fsm_pos + 4;
   while (p < line.size() && line[p] == ' ') ++p;
 
-  // Name spans up to " id:" or "  id:".
   size_t id_kw = line.find(" id:", p);
   if (id_kw == string_view::npos) return false;
   out.name = trim(line.substr(p, id_kw - p));
   if (out.name.empty()) return false;
 
-  // Parse id until ';'.
   p = id_kw + 4;
   while (p < line.size() && line[p] == ' ') ++p;
   size_t semi = line.find(';', p);
@@ -101,7 +91,6 @@ bool parse_line(string_view line, Parsed& out) {
   if (ec != std::errc()) return false;
   out.id = id;
 
-  // Direction marker.
   p = semi + 1;
   while (p < line.size() && line[p] == ' ') ++p;
   if (p >= line.size()) return false;
@@ -110,16 +99,13 @@ bool parse_line(string_view line, Parsed& out) {
   ++p;
   while (p < line.size() && line[p] == ' ') ++p;
 
-  // Expect "St:".
   if (p + 3 > line.size() || std::memcmp(line.data() + p, "St:", 3) != 0) return false;
   p += 3;
   while (p < line.size() && line[p] == ' ') ++p;
 
-  // Skip numeric state index.
   while (p < line.size() && line[p] >= '0' && line[p] <= '9') ++p;
   while (p < line.size() && line[p] == ' ') ++p;
 
-  // Collect state name (up to space or end).
   size_t state_start = p;
   while (p < line.size() && line[p] != ' ' && line[p] != '\r' && line[p] != '\n') ++p;
   out.state = line.substr(state_start, p - state_start);
@@ -130,7 +116,6 @@ bool parse_line(string_view line, Parsed& out) {
     return true;
   }
 
-  // Input line: find " Pr:" then skip to the event token.
   out.kind = LineKind::Input;
   size_t pr_pos = line.find("Pr:", p);
   if (pr_pos == string_view::npos) {
@@ -139,7 +124,6 @@ bool parse_line(string_view line, Parsed& out) {
   }
   size_t q = pr_pos + 3;
   while (q < line.size() && line[q] == ' ') ++q;
-  // Skip the code token "<num>:<num>".
   while (q < line.size() && line[q] != ' ' && line[q] != '\r' && line[q] != '\n') ++q;
   while (q < line.size() && line[q] == ' ') ++q;
   size_t ev_start = q;
@@ -150,13 +134,11 @@ bool parse_line(string_view line, Parsed& out) {
   return true;
 }
 
-// Maps an FSM class name (as listed in end_states.txt) to its set of terminal
-// states, and matches live FSM instance names (e.g. `RegisterLogic.0.abcd`)
-// to their class (e.g. `RegisterLogic`). Lookups are cached by instance name
-// so repeat log lines for the same FSM pay the classification cost once.
 struct EndStates {
   std::unordered_map<string, std::unordered_set<string>> by_class;
-  mutable std::unordered_map<string, string> class_cache;
+  std::vector<string> sorted_classes;
+  mutable std::unordered_map<string, string> pos_cache;
+  mutable std::unordered_set<string>         neg_cache;
 
   bool load(const string& path) {
     std::ifstream f(path);
@@ -171,30 +153,35 @@ struct EndStates {
       size_t colon = sv.find(':');
       if (colon == string_view::npos) continue;
       string_view name = trim(sv.substr(0, colon));
-      string_view st = trim(sv.substr(colon + 1));
+      string_view st   = trim(sv.substr(colon + 1));
       if (name.empty() || st.empty()) continue;
       by_class[string(name)].insert(string(st));
     }
+    sorted_classes.reserve(by_class.size());
+    for (const auto& kv : by_class) sorted_classes.push_back(kv.first);
+    std::sort(sorted_classes.begin(), sorted_classes.end(),
+              [](const string& a, const string& b) { return a.size() > b.size(); });
     return true;
   }
 
-  // Returns the class key that `name` belongs to, or empty string if untracked.
   const string& classify(const string& name) const {
     static const string kEmpty;
-    auto cit = class_cache.find(name);
-    if (cit != class_cache.end()) return cit->second;
-    const string* match = &kEmpty;
-    for (const auto& kv : by_class) {
-      const string& cls = kv.first;
+    {
+      auto it = pos_cache.find(name);
+      if (it != pos_cache.end()) return it->second;
+    }
+    if (neg_cache.count(name)) return kEmpty;
+
+    for (const string& cls : sorted_classes) {
       if (name == cls ||
           (name.size() > cls.size() && name.compare(0, cls.size(), cls) == 0 &&
            name[cls.size()] == '.')) {
-        match = &cls;
-        break;
+        auto [it, _] = pos_cache.emplace(name, cls);
+        return it->second;
       }
     }
-    auto [it, _] = class_cache.emplace(name, *match);
-    return it->second;
+    neg_cache.insert(name);
+    return kEmpty;
   }
 
   bool is_tracked(const string& name) const { return !classify(name).empty(); }
@@ -207,50 +194,47 @@ struct EndStates {
   }
 };
 
-// Compute HH:MM:SS.mmm between two "YYYY-MM-DD HH:MM:SS.mmm" strings.
-// Assumes b >= a. Only uses H/M/S/ms, so spans longer than 24h will wrap
-// hours visibly (e.g. "49:00:00.000").
 string format_delta(const string& a, const string& b) {
   auto as_ms = [](const string& ts) -> int64_t {
-    // "YYYY-MM-DD HH:MM:SS.mmm"
-    int H = std::stoi(ts.substr(11, 2));
-    int M = std::stoi(ts.substr(14, 2));
-    int S = std::stoi(ts.substr(17, 2));
+    int H  = std::stoi(ts.substr(11, 2));
+    int M  = std::stoi(ts.substr(14, 2));
+    int S  = std::stoi(ts.substr(17, 2));
     int ms = std::stoi(ts.substr(20, 3));
-    // Days contribute via date diff.
-    int y = std::stoi(ts.substr(0, 4));
+    int y  = std::stoi(ts.substr(0, 4));
     int mo = std::stoi(ts.substr(5, 2));
-    int d = std::stoi(ts.substr(8, 2));
+    int d  = std::stoi(ts.substr(8, 2));
     std::tm tm{};
     tm.tm_year = y - 1900;
-    tm.tm_mon = mo - 1;
+    tm.tm_mon  = mo - 1;
     tm.tm_mday = d;
-    tm.tm_hour = 0;
-    tm.tm_min = 0;
-    tm.tm_sec = 0;
-    // timegm is POSIX; on MinGW we fall back to _mkgmtime.
 #if defined(_WIN32)
     time_t day = _mkgmtime(&tm);
 #else
     time_t day = timegm(&tm);
 #endif
-    int64_t total_ms = static_cast<int64_t>(day) * 1000 +
-                       ((H * 3600 + M * 60 + S) * 1000LL) + ms;
-    return total_ms;
+    return static_cast<int64_t>(day) * 1000 +
+           ((H * 3600 + M * 60 + S) * 1000LL) + ms;
   };
   int64_t dms = as_ms(b) - as_ms(a);
   if (dms < 0) dms = 0;
-  int64_t h = dms / 3600000;
+  int64_t h   = dms / 3600000;
   int64_t rem = dms % 3600000;
-  int64_t m = rem / 60000;
+  int64_t m   = rem / 60000;
   rem %= 60000;
-  int64_t s = rem / 1000;
+  int64_t s  = rem / 1000;
   int64_t ms = rem % 1000;
   char buf[32];
   std::snprintf(buf, sizeof(buf), "%02lld:%02lld:%02lld.%03lld",
                 static_cast<long long>(h), static_cast<long long>(m),
                 static_cast<long long>(s), static_cast<long long>(ms));
   return string(buf);
+}
+
+string csv_field(const string& s) {
+  if (s.find_first_of(",\"\r\n") == string::npos) return s;
+  string r = "\"";
+  for (char c : s) { if (c == '"') r += '"'; r += c; }
+  return r + '"';
 }
 
 int64_t file_size(const string& path) {
@@ -271,7 +255,7 @@ void print_usage(const char* argv0) {
             << " <end_states.txt> <out.csv> <log1> [<log2> ...]\n";
 }
 
-}  // namespace
+}
 
 int main(int argc, char* argv[]) {
   if (argc < 4) {
@@ -279,7 +263,7 @@ int main(int argc, char* argv[]) {
     return 1;
   }
   const string end_states_path = argv[1];
-  const string out_path = argv[2];
+  const string out_path        = argv[2];
   std::vector<string> inputs;
   inputs.reserve(argc - 3);
   for (int i = 3; i < argc; ++i) inputs.emplace_back(argv[i]);
@@ -298,10 +282,10 @@ int main(int argc, char* argv[]) {
       std::cerr << "error: cannot open input: " << in_path << "\n";
       return 3;
     }
-    int64_t total = file_size(in_path);
-    int64_t bytes = 0;
-    int last_pct = -1;
-    string line;
+    int64_t total    = file_size(in_path);
+    int64_t bytes    = 0;
+    int     last_pct = -1;
+    string  line;
     line.reserve(512);
     while (std::getline(f, line)) {
       bytes += static_cast<int64_t>(line.size()) + 1;
@@ -313,36 +297,34 @@ int main(int argc, char* argv[]) {
         }
       }
 
+      if (has_ts_prefix(line)) {
+        string_view ts = string_view(line).substr(0, kTsLen);
+        if (ts > global_last_ts) global_last_ts = string(ts);
+      }
+
       Parsed p;
       if (!parse_line(line, p)) continue;
 
-      string ts(p.ts);
-      if (ts > global_last_ts) global_last_ts = ts;
-
       FsmKey key{string(p.name), p.id};
-      // Only track FSM families that appear in end_states — others are outside
-      // the analysis scope, and skipping them keeps memory bounded on large
-      // production logs.
       if (!end_states.is_tracked(key.name)) continue;
+
       auto it = fsms.find(key);
       if (it == fsms.end()) {
         FsmState st;
-        st.last_ts = ts;
+        st.last_state_change_ts = string(p.ts);
         st.state = string(p.state);
-        if (p.kind == LineKind::Input) st.pending_event = string(p.event);
+        if (p.kind == LineKind::Input) st.last_event = string(p.event);
         fsms.emplace(std::move(key), std::move(st));
         continue;
       }
+
       FsmState& st = it->second;
-      st.last_ts = ts;
       if (p.kind == LineKind::Input) {
-        st.pending_event = string(p.event);
-        // Current state reported by the log; trust it.
-        st.state = string(p.state);
+        st.last_event = string(p.event);
+        st.state      = string(p.state);
       } else {
-        st.state = string(p.state);
-        st.last_event = std::move(st.pending_event);
-        st.pending_event.clear();
+        st.last_state_change_ts = string(p.ts);
+        st.state                = string(p.state);
       }
     }
     std::fprintf(stderr, "\r[progress] %s: done (%lld bytes)          \n",
@@ -355,18 +337,32 @@ int main(int argc, char* argv[]) {
     return 4;
   }
 
-  size_t stuck = 0;
-  for (const auto& [key, st] : fsms) {
-    if (end_states.is_terminal(key.name, st.state)) continue;
+  std::vector<std::pair<FsmKey, FsmState>> stuck;
+  for (auto& [key, st] : fsms) {
+    if (!end_states.is_terminal(key.name, st.state))
+      stuck.emplace_back(key, st);
+  }
+  std::sort(stuck.begin(), stuck.end(), [](const auto& a, const auto& b) {
+    if (a.second.last_state_change_ts != b.second.last_state_change_ts)
+      return a.second.last_state_change_ts < b.second.last_state_change_ts;
+    if (a.first.name != b.first.name)
+      return a.first.name < b.first.name;
+    return a.first.id < b.first.id;
+  });
+
+  for (const auto& [key, st] : stuck) {
     string dur = global_last_ts.empty()
                      ? string("00:00:00.000")
-                     : format_delta(st.last_ts, global_last_ts);
-    out << st.last_ts << ',' << key.name << ',' << key.id << ',' << st.state
-        << ',' << st.last_event << ',' << dur << '\n';
-    ++stuck;
+                     : format_delta(st.last_state_change_ts, global_last_ts);
+    out << csv_field(st.last_state_change_ts) << ','
+        << csv_field(key.name)                << ','
+        << key.id                             << ','
+        << csv_field(st.state)                << ','
+        << csv_field(st.last_event)           << ','
+        << dur                                << '\n';
   }
 
-  std::fprintf(stderr, "[done] %zu stuck FSM(s) written to %s\n", stuck,
-               out_path.c_str());
+  std::fprintf(stderr, "[done] %zu stuck FSM(s) written to %s\n",
+               stuck.size(), out_path.c_str());
   return 0;
 }
