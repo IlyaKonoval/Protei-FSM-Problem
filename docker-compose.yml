@@ -5,3 +5,6 @@ services:
     volumes:
       - ./out:/out
       - ./input:/input
+      - ./test_ds1:/app/test_ds1:ro
+      - ./test_ds2:/app/test_ds2:ro
+      - ./datasets:/app/datasets:ro

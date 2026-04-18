@@ -13,5 +13,9 @@ cmake-build-*
 task/
 img/
 out/
+input/
+test_ds1/
+test_ds2/
+datasets/
 README.md
 *.md

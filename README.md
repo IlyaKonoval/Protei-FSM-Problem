@@ -13,15 +13,20 @@ make native-release
 make native-debug
 ./build-debug/app <end_states.txt> <out.csv> <log1> [<log2> ...]
 
-# Через Docker (результат сохраняется в ./out/ на хосте)
-make run                                        # запуск с параметрами по умолчанию - ./out/out.csv
-make run END_STATES=testdata/ds5/end_states.txt \
-         INPUTS="testdata/ds5/in1.txt testdata/ds5/in2.txt testdata/ds5/in3.txt" \
-         OUT=/out/result.csv                    # свои параметры - ./out/result.csv
-make run-debug                                  # то же, но через Debug-режим (санитайзеры)
+# Тесты (нативные, результат в /tmp/)
+make test1                                      # прогон test_ds1, diff с эталоном
+make test-all                                   # все датасеты
 
-make test1                                      # прогон ds1 - ./out/out_ds1.csv
-make test-all                                   # все датасеты - ./out/out_ds1..5.csv
+# Через Docker (результат сохраняется в ./out/ на хосте)
+make run                                        # запуск с параметрами по умолчанию → ./out/out.csv
+make run END_STATES=datasets/5/end_states.txt \
+         INPUTS="datasets/5/in1.txt datasets/5/in2.txt datasets/5/in3.txt" \
+         OUT=/out/result.csv                    # свои параметры → ./out/result.csv
+make run-debug                                  # то же, но Debug-бинарь (санитайзеры)
+
+# Тесты через Docker (результат в ./out/)
+make docker-test1                               # прогон test_ds1, diff с эталоном
+make docker-test-all                            # все датасеты
 ```
 
 ## Формат файлов
@@ -121,59 +126,65 @@ ClassName: ANOTHER_TERMINAL_STATE
 
 ## Известные расхождения с эталонами
 
-`testdata/ds2/out.csv` содержит `0` в поле duration. Программа выводит `00:00:00.027` — точное значение по последнему timestamp файла. Расхождение в формате, не в данных.
+`test_ds2/out.csv` содержит `0` в поле duration. Программа выводит `00:00:00.027` — точное значение по последнему timestamp файла. Расхождение в формате, не в данных.
 
 ## Makefile — справочник команд
 
-### Нативная сборка (без Docker)
+### Сборка
 
 | Команда | Что делает |
 |---------|-----------|
 | `make native-release` | Собирает Release-бинарь в `build-release/app` |
 | `make native-debug` | Собирает Debug-бинарь с ASan/UBSan/LSan в `build-debug/app` |
-| `make native-run` | Собирает и запускает с параметрами по умолчанию (`testdata/ds1`) |
-| `make native-test1` | Прогоняет ds1 и сравнивает результат с эталоном |
-| `make native-test-all` | Прогоняет все датасеты (ds1–ds5) с проверкой diff |
+| `make native-run` | Собирает и запускает с параметрами по умолчанию (`test_ds1`) |
 | `make native-clean` | Удаляет `build-release/` и `build-debug/` |
+
+### Тесты (нативные)
+
+Собирают Release-бинарь, запускают программу и сравнивают результат с эталонным `out.csv` через `diff`. Результат пишется в `/tmp/`.
+
+| Команда | Датасет | Проверяет diff |
+|---------|---------|---------------|
+| `make test1` | `test_ds1/` | да (`test_ds1/out.csv`) |
+| `make test2` | `test_ds2/` | да (`test_ds2/out.csv`) |
+| `make test3` | `datasets/3/` | нет (эталона нет) |
+| `make test4` | `datasets/4/` | нет (эталона нет) |
+| `make test5` | `datasets/5/` | нет (эталона нет) |
+| `make test-all` | все | — |
 
 ### Docker
 
-Контейнер монтирует два каталога с хоста:
-- `./out/` → `/out/` — куда программа пишет CSV; файлы остаются на хосте после завершения контейнера
-- `./input/` → `/input/` — можно положить сюда свои логи и передавать как `/input/mylog.txt`
+Образ содержит только бинарь — тестовые данные и ввод/вывод монтируются с хоста:
 
-Тестовые данные из `testdata/` скопированы внутрь образа на этапе `docker build`, поэтому для стандартных тестов монтировать ничего дополнительно не нужно.
+| Хост | Контейнер | Назначение |
+|------|-----------|-----------|
+| `./out/` | `/out/` | CSV-результат — остаётся на хосте после `--rm` |
+| `./input/` | `/input/` | Свои логи, передавать как `/input/mylog.txt` |
+| `./test_ds1/` | `/app/test_ds1/` | Тестовые данные ds1 (read-only) |
+| `./test_ds2/` | `/app/test_ds2/` | Тестовые данные ds2 (read-only) |
+| `./datasets/` | `/app/datasets/` | Тестовые данные ds3–ds5 (read-only) |
 
 | Команда | Что делает |
 |---------|-----------|
-| `make run` | Собирает образ и запускает с параметрами по умолчанию → `./out/out.csv` |
+| `make run` | Запускает с параметрами по умолчанию → `./out/out.csv` |
 | `make run-debug` | То же, но Debug-бинарь (санитайзеры) |
-| `make test1` | Прогоняет ds1, сравнивает `./out/out_ds1.csv` с эталоном |
-| `make test-all` | Прогоняет все датасеты с проверкой diff |
-| `make clean` | Останавливает и удаляет контейнеры (`docker-compose down`) |
+| `make docker-test1` | Прогоняет `test_ds1`, diff → `./out/out_ds1.csv` |
+| `make docker-test-all` | Все датасеты |
+| `make clean` | Останавливает и удаляет контейнеры |
 
 ### Как работает проверка тестов
 
-Каждый `test*`-таргет после запуска программы выполняет:
+Каждый тест-таргет с эталоном после запуска программы выполняет:
 ```
-diff --strip-trailing-cr testdata/dsN/out.csv <результат>
+diff --strip-trailing-cr <эталон>/out.csv <результат>
 ```
-Если вывод совпадает с эталоном — `diff` молчит и `make` завершается успешно. При расхождении выводится построчный diff и `make` возвращает ненулевой код ошибки. `--strip-trailing-cr` нейтрализует разницу между Windows (`\r\n`) и Unix (`\n`) окончаниями строк в эталонных файлах.
-
-### Пример: запустить ds4 через Docker и проверить результат
-
-```bash
-make test4
-# Программа пишет ./out/out_ds4.csv
-# diff сравнивает его с testdata/ds4/out.csv
-# При успехе: тишина. При ошибке: diff-вывод и make exit 1
-```
+Если вывод совпадает — `diff` молчит и `make` завершается успешно. При расхождении выводится построчный diff и `make` возвращает ненулевой код. `--strip-trailing-cr` нейтрализует разницу между Windows (`\r\n`) и Unix (`\n`) в эталонных файлах.
 
 ### Передача своих файлов через Docker
 
 ```bash
 cp /path/to/mylog.txt input/
-make run END_STATES=testdata/ds1/end_states.txt \
+make run END_STATES=test_ds1/end_states.txt \
          INPUTS=/input/mylog.txt \
          OUT=/out/result.csv
 # Результат: ./out/result.csv
