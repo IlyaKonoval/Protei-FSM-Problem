@@ -1,2 +1,1 @@
 # Protei-FSM-Problem
-.
