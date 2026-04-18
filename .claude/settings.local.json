@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cmake -S . -B build-test -G \"MinGW Makefiles\")",
+      "Bash(where pdftotext *)",
+      "Bash(pdftotext -layout \"C:/Users/Ilya/CLionProjects/Protei-FSM-Problem/Задание.pdf\" \"C:/Users/Ilya/CLionProjects/Protei-FSM-Problem/task.txt\")",
+      "Bash(pdftotext -enc UTF-8 \"C:/Users/Ilya/CLionProjects/Protei-FSM-Problem/Задание.pdf\" \"C:/Users/Ilya/CLionProjects/Protei-FSM-Problem/task_utf8.txt\")",
+      "Bash(docker --version)",
+      "Bash(docker info *)",
+      "Bash(docker build *)",
+      "Bash(docker run *)",
+      "Bash(MSYS_NO_PATHCONV=1 docker run *)"
+    ]
+  }
+}

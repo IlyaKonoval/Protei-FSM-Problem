@@ -1,0 +1,165 @@
+
+
+    ,
+
+ FSM 
+
+ - 
+      
+
+       
+   ,
+
+          
+   : ,
+   
+  :
+   ""
+
+2026-04-10 11:27:45.988 PrimFSM.cpp(37) FSM: SubscribeLogic.0.61bf91b400000002
+id: 0; > St: 2 INIT_WAIT_STORAGE_CONF Pr: 38405:11
+
+SIP_TR_SUBSCRIBE_IND (Event: protei-test-event Expires: 120)
+
+
+                                       ID 
+
+(`2026-04-10 11:27:45.988`)
+            (`id: 0;`)
+
+
+C  ,    
+                                
+
+(`PrimFSM.cpp(37)`)
+                    (`INIT_WAIT_STORAGE_CONF`)
+
+
+
+                                        
+
+(`FSM`)
+                                (`Pr: 38405:11 SIP_TR_SUBSCRIBE_IND`)
+
+
+ 
+                                          
+
+(`SubscribeLogic.0.61bf91b400000002`)
+  (`(Event: protei-test-event Expires: 120)`)
+
+  :
+  ""
+
+2026-04-10 11:27:45.998 PrimFSM.cpp(72) FSM: SubscribeLogic.0.61bf91b400000002 id:
+0; < St: 5 PRE_ANSWER
+
+
+                              
+
+(`2026-04-10 11:27:45.988`)
+  (`SubscribeLogic.0.61bf91b400000002`)
+
+
+C  ,    
+                     ID 
+
+(`PrimFSM.cpp(72)`)
+          (`id: 0;`)
+
+
+
+                              
+
+(`FSM`)
+                      (`PRE_ANSWER`)
+
+  
+
+<   >
+
+< >
+
+<ID >
+
+<  >
+
+<   >
+
+<     
+
+(     )>
+ 
+
+  Linux  CMake           STL
+                         
+CMake  : DEBUG-
+ --                      (-) 
+  -DCMAKE_BUILD_TYPE     
+=Debug; RELEASE- --    
+
+                         
+                         ()
+  
+( )                     
+                       CSV-
+ 
+
+                   , 
+(    )                
+                
+    
+(8Gb RAM)            
+                :
+
+   -- 16:00 \n
+(    )                 ()
+                     ,   
+  ,                
+
+                    
+
+                     
+
+                      
+  Protei_GUEST
+
+                               
+
+                         
+ 
+
+1111111
+
+
+
+
+
+ 1274767:::::::01014000555000-------11111112774687:::::::10040010050500   
+
+                                                                                             
+
+                                                                                            
+
+                                                                                             
+
+                                                                                             
+
+                                                                                            .  
+
+                                                                                             
+
+:
+
+  
+
+       ,  ,  
+
+
+         ?
+
+         ?
+
+        ( )   
+       ?
+
