@@ -1,6 +1,6 @@
 END_STATES ?= testdata/ds1/end_states.txt
 INPUTS     ?= testdata/ds1/in.txt
-OUT        ?= /tmp/out.csv
+OUT        ?= /out/out.csv
 
 BUILD_RELEASE ?= build-release
 BUILD_DEBUG   ?= build-debug
@@ -18,6 +18,8 @@ APP_DEBUG   := $(BUILD_DEBUG)/app
         build run run-debug \
         test1 test2 test3 test4 test5 test-all \
         clean
+
+DIFF = diff --strip-trailing-cr
 
 # ── Native ───────────────────────────────────────────────────────────────────
 
@@ -37,19 +39,24 @@ native-run-debug: native-debug
 
 native-test1: native-release
 	$(APP_RELEASE) testdata/ds1/end_states.txt /tmp/out_ds1.csv testdata/ds1/in.txt
+	$(DIFF) testdata/ds1/out.csv /tmp/out_ds1.csv
 
 native-test2: native-release
 	$(APP_RELEASE) testdata/ds2/end_states.txt /tmp/out_ds2.csv testdata/ds2/in.txt
+	$(DIFF) testdata/ds2/out.csv /tmp/out_ds2.csv
 
 native-test3: native-release
 	$(APP_RELEASE) testdata/ds3/end_states.txt /tmp/out_ds3.csv testdata/ds3/in.txt
+	$(DIFF) testdata/ds3/out.csv /tmp/out_ds3.csv
 
 native-test4: native-release
 	$(APP_RELEASE) testdata/ds4/end_states.txt /tmp/out_ds4.csv testdata/ds4/in.txt
+	$(DIFF) testdata/ds4/out.csv /tmp/out_ds4.csv
 
 native-test5: native-release
 	$(APP_RELEASE) testdata/ds5/end_states.txt /tmp/out_ds5.csv \
 		testdata/ds5/in1.txt testdata/ds5/in2.txt testdata/ds5/in3.txt
+	$(DIFF) testdata/ds5/out.csv /tmp/out_ds5.csv
 
 native-test-all: native-test1 native-test2 native-test3 native-test4 native-test5
 
@@ -68,20 +75,25 @@ run-debug:
 	$(COMPOSE) run --rm --build --entrypoint /app/build-debug/app $(SERVICE) $(END_STATES) $(OUT) $(INPUTS)
 
 test1:
-	$(COMPOSE) run --rm --build $(SERVICE) testdata/ds1/end_states.txt /tmp/out_ds1.csv testdata/ds1/in.txt
+	$(COMPOSE) run --rm --build $(SERVICE) testdata/ds1/end_states.txt /out/out_ds1.csv testdata/ds1/in.txt
+	$(DIFF) testdata/ds1/out.csv out/out_ds1.csv
 
 test2:
-	$(COMPOSE) run --rm --build $(SERVICE) testdata/ds2/end_states.txt /tmp/out_ds2.csv testdata/ds2/in.txt
+	$(COMPOSE) run --rm --build $(SERVICE) testdata/ds2/end_states.txt /out/out_ds2.csv testdata/ds2/in.txt
+	$(DIFF) testdata/ds2/out.csv out/out_ds2.csv
 
 test3:
-	$(COMPOSE) run --rm --build $(SERVICE) testdata/ds3/end_states.txt /tmp/out_ds3.csv testdata/ds3/in.txt
+	$(COMPOSE) run --rm --build $(SERVICE) testdata/ds3/end_states.txt /out/out_ds3.csv testdata/ds3/in.txt
+	$(DIFF) testdata/ds3/out.csv out/out_ds3.csv
 
 test4:
-	$(COMPOSE) run --rm --build $(SERVICE) testdata/ds4/end_states.txt /tmp/out_ds4.csv testdata/ds4/in.txt
+	$(COMPOSE) run --rm --build $(SERVICE) testdata/ds4/end_states.txt /out/out_ds4.csv testdata/ds4/in.txt
+	$(DIFF) testdata/ds4/out.csv out/out_ds4.csv
 
 test5:
-	$(COMPOSE) run --rm --build $(SERVICE) testdata/ds5/end_states.txt /tmp/out_ds5.csv \
+	$(COMPOSE) run --rm --build $(SERVICE) testdata/ds5/end_states.txt /out/out_ds5.csv \
 		testdata/ds5/in1.txt testdata/ds5/in2.txt testdata/ds5/in3.txt
+	$(DIFF) testdata/ds5/out.csv out/out_ds5.csv
 
 test-all: test1 test2 test3 test4 test5
 

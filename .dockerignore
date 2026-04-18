@@ -9,3 +9,9 @@ cmake-build-*
 *.obj
 *.out
 *.exe
+
+task/
+img/
+out/
+README.md
+*.md

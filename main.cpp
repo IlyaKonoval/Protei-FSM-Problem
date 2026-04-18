@@ -69,8 +69,20 @@ string_view trim(string_view s) {
 // Проверяет, начинается ли строка с валидного timestamp.
 bool has_ts_prefix(string_view line) {
     if (line.size() < kTsLen) return false;
-    return line[4]  == '-' && line[7]  == '-' && line[10] == ' ' &&
-           line[13] == ':' && line[16] == ':' && line[19] == '.';
+    auto d = [&](size_t i) { return line[i] >= '0' && line[i] <= '9'; };
+    return d(0) && d(1) && d(2) && d(3) &&   // YYYY
+           line[4]  == '-' &&
+           d(5) && d(6) &&                    // MM
+           line[7]  == '-' &&
+           d(8) && d(9) &&                    // DD
+           line[10] == ' ' &&
+           d(11) && d(12) &&                  // HH
+           line[13] == ':' &&
+           d(14) && d(15) &&                  // MM
+           line[16] == ':' &&
+           d(17) && d(18) &&                  // SS
+           line[19] == '.' &&
+           d(20) && d(21) && d(22);           // mmm
 }
 
 // Разбирает строку лога как FSM-событие.
@@ -100,7 +112,7 @@ bool parse_line(string_view line, Parsed& out) {
     string_view id_sv = trim(line.substr(p, semi - p));
     int64_t id = 0;
     auto [ptr, ec] = std::from_chars(id_sv.data(), id_sv.data() + id_sv.size(), id);
-    if (ec != std::errc()) return false;
+    if (ec != std::errc() || ptr != id_sv.data() + id_sv.size()) return false;
     out.id = id;
 
     // Направление: '>' - входящее сообщение, '<' - смена состояния.
@@ -194,8 +206,8 @@ struct EndStates {
                 (name.size() > cls.size() &&
                  name.compare(0, cls.size(), cls) == 0 &&
                  name[cls.size()] == '.')) {
-                auto [it, _] = pos_cache.emplace(name, cls);
-                return it->second;
+                auto res = pos_cache.emplace(name, cls);
+                return res.first->second;
             }
         }
         neg_cache.insert(name);
@@ -218,13 +230,8 @@ struct EndStates {
 // Часы не ограничены 24 - для логов длиннее суток корректно выдаёт, например, "49:00:00.000".
 string format_delta(const string& a, const string& b) {
     auto as_ms = [](const string& ts) -> int64_t {
-        int H  = std::stoi(ts.substr(11, 2));
-        int M  = std::stoi(ts.substr(14, 2));
-        int S  = std::stoi(ts.substr(17, 2));
-        int ms = std::stoi(ts.substr(20, 3));
-        int y  = std::stoi(ts.substr(0, 4));
-        int mo = std::stoi(ts.substr(5, 2));
-        int d  = std::stoi(ts.substr(8, 2));
+        int y, mo, d, H, M, S, ms;
+        std::sscanf(ts.c_str(), "%d-%d-%d %d:%d:%d.%d", &y, &mo, &d, &H, &M, &S, &ms);
         std::tm tm{};
         tm.tm_year = y - 1900;
         tm.tm_mon  = mo - 1;
@@ -366,6 +373,11 @@ int main(int argc, char* argv[]) {
                 // Переход - обновляем состояние и timestamp последнего перехода.
                 st.last_state_change_ts = string(p.ts);
                 st.state                = string(p.state);
+                // Достигли терминального состояния - удаляем из таблицы, экономим память.
+                if (end_states.is_terminal(key.name, st.state)) {
+                    fsms.erase(it);
+                    continue;
+                }
             }
         }
 
@@ -382,20 +394,24 @@ int main(int argc, char* argv[]) {
     }
 
     // Собираем зависшие FSM и сортируем для стабильного вывода.
-    std::vector<std::pair<FsmKey, FsmState>> stuck;
-    for (auto& [key, st] : fsms) {
-        if (!end_states.is_terminal(key.name, st.state))
-            stuck.emplace_back(key, st);
+    // Используем указатели чтобы избежать копирования строк.
+    using FsmEntry = std::pair<const FsmKey, FsmState>;
+    std::vector<const FsmEntry*> stuck;
+    for (const auto& entry : fsms) {
+        if (!end_states.is_terminal(entry.first.name, entry.second.state))
+            stuck.push_back(&entry);
     }
-    std::sort(stuck.begin(), stuck.end(), [](const auto& a, const auto& b) {
-        if (a.second.last_state_change_ts != b.second.last_state_change_ts)
-            return a.second.last_state_change_ts < b.second.last_state_change_ts;
-        if (a.first.name != b.first.name)
-            return a.first.name < b.first.name;
-        return a.first.id < b.first.id;
+    std::sort(stuck.begin(), stuck.end(), [](const FsmEntry* a, const FsmEntry* b) {
+        if (a->second.last_state_change_ts != b->second.last_state_change_ts)
+            return a->second.last_state_change_ts < b->second.last_state_change_ts;
+        if (a->first.name != b->first.name)
+            return a->first.name < b->first.name;
+        return a->first.id < b->first.id;
     });
 
-    for (const auto& [key, st] : stuck) {
+    for (const FsmEntry* entry : stuck) {
+        const FsmKey&   key = entry->first;
+        const FsmState& st  = entry->second;
         string dur = global_last_ts.empty()
                          ? string("00:00:00.000")
                          : format_delta(st.last_state_change_ts, global_last_ts);

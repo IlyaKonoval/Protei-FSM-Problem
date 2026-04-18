@@ -2,3 +2,6 @@ services:
   app:
     build: .
     image: protei-fsm-app
+    volumes:
+      - ./out:/out
+      - ./input:/input

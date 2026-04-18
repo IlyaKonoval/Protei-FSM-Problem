@@ -13,15 +13,15 @@ make native-release
 make native-debug
 ./build-debug/app <end_states.txt> <out.csv> <log1> [<log2> ...]
 
-# Через Docker
-make run                                        # запуск с параметрами по умолчанию
+# Через Docker (результат сохраняется в ./out/ на хосте)
+make run                                        # запуск с параметрами по умолчанию - ./out/out.csv
 make run END_STATES=testdata/ds5/end_states.txt \
          INPUTS="testdata/ds5/in1.txt testdata/ds5/in2.txt testdata/ds5/in3.txt" \
-         OUT=/tmp/result.csv                    # свои параметры
+         OUT=/out/result.csv                    # свои параметры - ./out/result.csv
 make run-debug                                  # то же, но через Debug-режим (санитайзеры)
 
-make test1                                      # прогон ds1
-make test-all                                   # все датасеты
+make test1                                      # прогон ds1 - ./out/out_ds1.csv
+make test-all                                   # все датасеты - ./out/out_ds1..5.csv
 ```
 
 ## Формат файлов
@@ -122,3 +122,59 @@ ClassName: ANOTHER_TERMINAL_STATE
 ## Известные расхождения с эталонами
 
 `testdata/ds2/out.csv` содержит `0` в поле duration. Программа выводит `00:00:00.027` — точное значение по последнему timestamp файла. Расхождение в формате, не в данных.
+
+## Makefile — справочник команд
+
+### Нативная сборка (без Docker)
+
+| Команда | Что делает |
+|---------|-----------|
+| `make native-release` | Собирает Release-бинарь в `build-release/app` |
+| `make native-debug` | Собирает Debug-бинарь с ASan/UBSan/LSan в `build-debug/app` |
+| `make native-run` | Собирает и запускает с параметрами по умолчанию (`testdata/ds1`) |
+| `make native-test1` | Прогоняет ds1 и сравнивает результат с эталоном |
+| `make native-test-all` | Прогоняет все датасеты (ds1–ds5) с проверкой diff |
+| `make native-clean` | Удаляет `build-release/` и `build-debug/` |
+
+### Docker
+
+Контейнер монтирует два каталога с хоста:
+- `./out/` → `/out/` — куда программа пишет CSV; файлы остаются на хосте после завершения контейнера
+- `./input/` → `/input/` — можно положить сюда свои логи и передавать как `/input/mylog.txt`
+
+Тестовые данные из `testdata/` скопированы внутрь образа на этапе `docker build`, поэтому для стандартных тестов монтировать ничего дополнительно не нужно.
+
+| Команда | Что делает |
+|---------|-----------|
+| `make run` | Собирает образ и запускает с параметрами по умолчанию → `./out/out.csv` |
+| `make run-debug` | То же, но Debug-бинарь (санитайзеры) |
+| `make test1` | Прогоняет ds1, сравнивает `./out/out_ds1.csv` с эталоном |
+| `make test-all` | Прогоняет все датасеты с проверкой diff |
+| `make clean` | Останавливает и удаляет контейнеры (`docker-compose down`) |
+
+### Как работает проверка тестов
+
+Каждый `test*`-таргет после запуска программы выполняет:
+```
+diff --strip-trailing-cr testdata/dsN/out.csv <результат>
+```
+Если вывод совпадает с эталоном — `diff` молчит и `make` завершается успешно. При расхождении выводится построчный diff и `make` возвращает ненулевой код ошибки. `--strip-trailing-cr` нейтрализует разницу между Windows (`\r\n`) и Unix (`\n`) окончаниями строк в эталонных файлах.
+
+### Пример: запустить ds4 через Docker и проверить результат
+
+```bash
+make test4
+# Программа пишет ./out/out_ds4.csv
+# diff сравнивает его с testdata/ds4/out.csv
+# При успехе: тишина. При ошибке: diff-вывод и make exit 1
+```
+
+### Передача своих файлов через Docker
+
+```bash
+cp /path/to/mylog.txt input/
+make run END_STATES=testdata/ds1/end_states.txt \
+         INPUTS=/input/mylog.txt \
+         OUT=/out/result.csv
+# Результат: ./out/result.csv
+```
